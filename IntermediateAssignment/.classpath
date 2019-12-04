@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="Library/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="Library/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="Library/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="Library/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="Library/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="Library/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="Library/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="Library/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="Library/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="Library/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
