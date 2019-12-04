@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Fourth Regression Suite" thread-count="100" parallel="methods">
+
+	<test name="Fourth Regression Suite">
+
+		<packages>
+			<package name="com.selenium.ebiz.search"/> <!--32-->
+			<package name="com.selenium.ebiz.browsing_and_navigation"/> <!--5-->
+			<package name="com.selenium.ebiz.billing_grid"/> <!--2-->
+
+		</packages>
+
+
+	</test>
+</suite>

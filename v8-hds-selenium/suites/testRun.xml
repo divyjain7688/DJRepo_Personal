@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Quality Of Life Suite" thread-count="100" parallel="methods">
+
+
+
+  <test  name="Test">
+  <classes>
+
+							<!-- Group1 - 3 -->
+		<class name="com.selenium.ebiz.add_to_cart.addToCart_grid.VerifyIfItemCanBeAddedToCartThroughQuickOrderGroupboxOnShoppingCart_Grid"> 
+		<methods><include name="addtocart_VerifyPartWasAddedIntoSCFromQuickOrderPad" /></methods>	</class>
+		<class name="com.selenium.ebiz.product_listing_page.plp_grid.VerifyIfItemCanBeAddedToTheCartThroughPLPListView"> 
+		<methods><include name="plp_VerifyIfItemCanBeAddedToTheCartThroughPLPListView" /></methods>	</class>
+		<class name="com.selenium.ebiz.add_to_cart.addToCart_grid.VerifyItemAddedToCartFromSaveListSummary_Grid"> 
+		<methods><include name="addtocart_VerifyItemAddedToCartFromSaveListSummary" /></methods>	</class>
+		
+		
+									<!-- Group2 - 2 -->
+		<class name="com.selenium.ebiz.account_management.registration.CreateNewRegistrationGuest"> 
+		<methods><include name="reg_verifyRegistration" /></methods>	</class>
+		 <class name="com.selenium.ebiz.save_list.VerifyingSortByFunctionalityOnSaveDetailListPageSharedListView"> 
+		<methods><include name="savedList_VerifyingSortByFunctionalityOnSaveDetailListPageSharedListView" /></methods>	</class>
+		
+									<!-- Group3 - 2-->
+		<class name="com.selenium.ebiz.shoppingCart_UI.VerifyIfTheUserCanEnterTheSourceCode"> 
+		<methods><include name="shoppingcartUI_VerifyIfTheUserCanEnterTheSourceCode" /></methods>	</class>
+		<class name="com.selenium.ebiz.shoppingCart_UI.ValidateStrikethroughPricingInCartRegularUser"> 
+		<methods><include name="shoppingcartUI_ValidateStrikethroughPricingInCartRegularUser_MOQPart" /></methods>	</class>
+		
+		<!-- Group4 - 3-->
+		 <class name="com.selenium.ebiz.search.ValidatePartsLinkSearch"> 
+		<methods><include name="search_ValidatePartsLinkValidSearch" /></methods>	</class>
+		<class name="com.selenium.ebiz.search.VerifyLookAheadSearchForACategoryRegularAndBooleanVariables"> 
+		<methods><include name="search_VerifyLookAheadSearchForACategoryRegularAndBooleanVariablesLoggedInUser" /></methods>	</class>
+		<class name="com.selenium.ebiz.search.VerifyIfItemCanBeSearchedByEnteringIntoSearch"> 
+		<methods><include name="search_VerifyIfItemCanBeSearchedByEnteringIntoSearch" /></methods>	</class>
+		
+										<!-- Group5 - 2-->						
+		<class name="com.selenium.ebiz.header.VerifyStaticWebsiteHelpInUtilityBarDisplayed"> 
+		<methods><include name="header_DisplayStaticWebsiteHelpInUtilityBarOnOrderHistoryPage" /></methods>	</class>	
+		<class name="com.selenium.ebiz.footer.FooterLinkParameterization_Grid"> 
+		<methods><include name="footer_VerifyPrivacyPolicyLink" /></methods>	</class>	
+		
+										
+			
+										<!-- Group7 - 2 -->
+			<class name="com.selenium.ebiz.account_management.login.LoginTestAllScenarios"> 
+			<methods><include name="login_verifyContentRecommandationForUnauthenticatedUser" /></methods>	</class>
+			<class name="com.selenium.ebiz.account_management.login.ExistingUserLogin"> 
+			<methods><include name="login_verifyMergeCartForExistingUserLogIn" /></methods>	</class>
+			
+	</classes>
+
+  </test> 
+</suite> 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestRun]">
+  <listeners>
+    <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+    <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.selenium.ebiz.order_history.grid_tests_orderHistory.VerifyFieldsOnTheOrderHistorySummaryPage_Grid">
+        <methods>
+          <include name="orderHistory_VerifyFieldsOnTheOrderHistorySummaryPage" invocation-numbers="0 0"/>
+          <include name="getReport"/>
+        </methods>
+      </class> <!-- com.selenium.ebiz.order_history.grid_tests_orderHistory.VerifyFieldsOnTheOrderHistorySummaryPage_Grid -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestRun] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Third Regression Suite" thread-count="100" parallel="methods">
+	<!--The suite contains the regression tests that are related to the Top Links functionalities.
+	Like: OHDP, FPP, Quotes, Saved List etc
+	</listeners-->
+
+	<test name="Third Regression Suite">
+
+	<packages>
+		<package name="com.selenium.ebiz.compareProducts.compareProducts_grid"/> <!--8-->
+		<package name="com.selenium.ebiz.shoppingCart_UI"/> <!--17-->
+		<package name="com.selenium.ebiz.product_detail_page"/> <!--12-->
+
+
+	</packages>
+
+
+	</test>
+</suite>

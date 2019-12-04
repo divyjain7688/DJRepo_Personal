@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="100" parallel="methods">
+
+
+
+  <test  name="First Regression Suite">
+    <packages>
+      <package name="com.selenium.ebiz.add_to_cart.addToCart_grid"/> <!--14-->
+      <package name="com.selenium.ebiz.add_to_list.addToList_grid"/> <!--13-->
+      <package name="com.selenium.ebiz.product_listing_page.plp_grid"/> <!--19-->
+
+
+    </packages>
+
+
+  </test> 
+</suite> 

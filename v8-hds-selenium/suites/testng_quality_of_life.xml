@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Quality Of Life Suite" thread-count="100" parallel="methods">
+
+
+
+  <test  name="Quality Of Life Suite">
+   <classes>
+     <class name="com.selenium.ebiz.qualityOfLife.QualityOfLife_SmokeTest"/>
+     <class name="com.selenium.ebiz.qualityOfLife.QualityOfLife_PnA"/>
+       <class name="com.selenium.ebiz.qualityOfLife.QualityOfLife_RealTimePricing"/>
+   </classes>
+
+
+  </test> 
+</suite> 

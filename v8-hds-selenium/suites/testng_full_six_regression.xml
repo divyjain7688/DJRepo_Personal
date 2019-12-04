@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Six Regression Suite" thread-count="100" parallel="methods">
+
+	<test name="Six Regression Suite">
+
+		<packages>
+			<package name="com.selenium.ebiz.quickCheckout"/> <!--13-->
+			<package name="com.selenium.ebiz.quotes"/> <!--25-->
+			<package name="com.selenium.ebiz.account_management.suma"/> <!--3-->
+			<package name="com.selenium.ebiz.config_blinds"/> <!--2-->
+			<package name="com.selenium.ebiz.email_and_print_pages"/> <!--4-->
+
+		</packages>
+
+
+	</test>
+</suite>

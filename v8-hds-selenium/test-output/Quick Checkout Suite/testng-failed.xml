@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" guice-stage="DEVELOPMENT" verbose="100" name="Failed suite [Quick Checkout Suite]" parallel="methods">
+  <test name="Quick Checkout(failed)" parallel="methods">
+    <classes>
+      <class name="com.selenium.ebiz.quickCheckout.AddQuickCheckoutButtonToTheQOPage">
+        <methods>
+          <include name="quickCheckout_AddQuickCheckoutButtonToTheQOPage" invocation-numbers="0"/>
+          <include name="getReport"/>
+        </methods>
+      </class> <!-- com.selenium.ebiz.quickCheckout.AddQuickCheckoutButtonToTheQOPage -->
+    </classes>
+  </test> <!-- Quick Checkout(failed) -->
+</suite> <!-- Failed suite [Quick Checkout Suite] -->
