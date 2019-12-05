@@ -21,7 +21,7 @@ public class intToWord {
 	
 	public void displayeWordValue(char d)
 	{
-		Map<Character,String> intWord = new HashMap<>();
+		Map<Character,String> intWord = new HashMap();
 		intWord.put('0', "zero");
 		intWord.put('1', "one");
 		intWord.put('2', "two");
