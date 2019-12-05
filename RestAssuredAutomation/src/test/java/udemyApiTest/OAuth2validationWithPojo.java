@@ -2,17 +2,24 @@ package udemyApiTest;
 
 import static io.restassured.RestAssured.given;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import io.restassured.RestAssured;
+import Pojo.Api;
+import Pojo.GetCourse;
+import Pojo.WebAutomation;
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 
-public class OAuth2validation {
+public class OAuth2validationWithPojo {
+	String[] courseTitles = {"Selenium Webdriver Java","Cypress","Protractor"};
 	@Test
 	public void getCourses() throws InterruptedException
 	{	
@@ -31,8 +38,8 @@ public class OAuth2validation {
 		System.out.println("code is " + code);
 		driver.close();
 
-		
-		
+
+
 		String accessTokenResponse = given().urlEncodingEnabled(false).
 				queryParams("code", code).
 				queryParams("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com").
@@ -48,10 +55,29 @@ public class OAuth2validation {
 
 
 
-		String response = given().
-				queryParam("access_token", accessToken).
-				when().log().all().
-				get("https://rahulshettyacademy.com/getCourse.php").asString();
-		System.out.println("final response is "+ response);
+		GetCourse gc  = given().
+				queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON).  //parsing not needed if in header, application type is defined as json
+				when().
+				get("https://rahulshettyacademy.com/getCourse.php").as(GetCourse.class);
+		System.out.println(gc.getlinkedIn());
+
+		List<Api> apiCourses= gc.getCourses().getApi();
+		for(int i=0;i<apiCourses.size();i++)
+		{
+			if(apiCourses.get(i).getCourseTitle().equals("SoapUI Webservices testing"))
+			{
+				System.out.println("price is " + apiCourses.get(i).getPrice());
+			}
+		}
+
+		ArrayList<String> actualCourses =  new ArrayList<String>();
+		List<WebAutomation> webAutomationCoures = gc.getCourses().getWebAutomation();
+		for(int j=0;j<webAutomationCoures.size();j++)
+		{
+
+			actualCourses.add(webAutomationCoures.get(j).getCourseTitle());
+		}
+		List<String> expectedCourses = Arrays.asList(courseTitles);
+		Assert.assertTrue(actualCourses.equals(expectedCourses));
 	}
 }
