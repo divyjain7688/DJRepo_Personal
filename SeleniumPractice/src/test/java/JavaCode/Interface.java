@@ -7,14 +7,17 @@ default void Defprint()
 	System.out.println("Defprint");
 	}
 }  
+
+
 interface Showable extends Printable{  
 void show(); 
 default void Defshow()
 {
 	System.out.println("Defshow");
 	}
-
 }  
+
+
 class TestInterface implements Showable,Printable{  
 public void print(){System.out.println("print");}  
 public void show(){System.out.println("show");}  
