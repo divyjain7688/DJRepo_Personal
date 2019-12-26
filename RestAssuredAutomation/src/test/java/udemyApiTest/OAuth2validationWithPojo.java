@@ -54,7 +54,6 @@ public class OAuth2validationWithPojo {
 		System.out.println("access token is "+ accessToken);
 
 
-
 		GetCourse gc  = given().
 				queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON).  //parsing not needed if in header, application type is defined as json
 				when().
