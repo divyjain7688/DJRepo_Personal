@@ -1,7 +1,7 @@
 package udemyApiTest;
 
 import static io.restassured.RestAssured.given;
-
+//import io.restassured.module.jsv.JsonSchemaValidator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -51,7 +51,14 @@ public class OAuth2validation {
 		String response = given().
 				queryParam("access_token", accessToken).
 				when().log().all().
-				get("https://rahulshettyacademy.com/getCourse.php").asString();
+				get("https://rahulshettyacademy.com/getCourse.php")
+				.asString();
 		System.out.println("final response is "+ response);
+		
+/*		String response = given().
+				queryParam("access_token", accessToken).
+				when().log().all().
+				get("https://rahulshettyacademy.com/getCourse.php").then().assertThat()
+			      .body(matchesJsonSchemaInClasspath("event_0.json"));*/
 	}
 }

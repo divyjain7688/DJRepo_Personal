@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35284" started-at="2019-11-19T17:23:12Z" finished-at="2019-11-19T17:23:47Z">
+  <suite name="Default suite" duration-ms="23622" started-at="2019-12-27T12:25:31Z" finished-at="2019-12-27T12:25:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35284" started-at="2019-11-19T17:23:12Z" finished-at="2019-11-19T17:23:47Z">
+    <test name="Default test" duration-ms="23622" started-at="2019-12-27T12:25:31Z" finished-at="2019-12-27T12:25:55Z">
       <class name="udemyApiTest.OAuth2validation">
-        <test-method status="PASS" signature="postGooglePlace()[pri:0, instance:udemyApiTest.OAuth2validation@4cf777e8]" name="postGooglePlace" duration-ms="35226" started-at="2019-11-19T22:53:12Z" finished-at="2019-11-19T22:53:47Z">
+        <test-method status="PASS" signature="getCourses()[pri:0, instance:udemyApiTest.OAuth2validation@4cf777e8]" name="getCourses" duration-ms="23599" started-at="2019-12-27T17:55:31Z" finished-at="2019-12-27T17:55:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postGooglePlace -->
+        </test-method> <!-- getCourses -->
       </class> <!-- udemyApiTest.OAuth2validation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
