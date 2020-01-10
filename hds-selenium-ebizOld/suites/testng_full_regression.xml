@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+  <test  name="Regression All Test">
+    <packages>
+      <package name="com.selenium.ebiz.check_out"/>
+      <package name="com.selenium.ebiz.navigation"/>
+      <package name="com.selenium.ebiz.account_management.my_account"/>
+      <package name="com.selenium.ebiz.search"/>                  
+      <package name="com.selenium.ebiz.smoketest"/>
+      <package name="com.selenium.ebiz.add_to_cart"/>
+      <package name="com.selenium.ebiz.account_management.suma"/>
+      <package name="com.selenium.ebiz.order_history"/>
+      <package name="com.selenium.ebiz.account_management.login"/>    
+      <package name="com.selenium.ebiz.footer"/>                  
+      <package name="com.selenium.ebiz.product_listing_page"/>
+      <package name="com.selenium.ebiz.quotes"/>
+      <package name="com.selenium.ebiz.MY_ACCOUNT"/>
+      <package name="com.selenium.ebiz.frequently_purchased"/>
+      <package name="com.selenium.ebiz.MINI_CART"/>
+      <package name="com.selenium.ebiz.save_list"/>
+      <package name="com.selenium.ebiz.header"/>
+      <package name="com.selenium.ebiz.static_links"/>
+    </packages>
+  </test> 
+</suite> 

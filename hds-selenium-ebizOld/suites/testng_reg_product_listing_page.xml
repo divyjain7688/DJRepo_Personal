@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="PRODUCT LISTING PAGE TEST">
+		<classes>
+			<class name="com.selenium.ebiz.product_listing_page.CompareTheseItemsPageAuthenticatedUser_WORKING" />
+			<class name="com.selenium.ebiz.product_listing_page.CompareTheseItemsPageGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.product_listing_page.ProductDetailsPageAuthenticatedUser_WORKING" />
+			<class name="com.selenium.ebiz.product_listing_page.ProductDetailsPageGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.product_listing_page.ProductListingPageAuthenticatedUser_WORKING" />
+			<class name="com.selenium.ebiz.product_listing_page.ProductListingPageGuestUser_WORKING" />
+		</classes>
+	</test>
+</suite>

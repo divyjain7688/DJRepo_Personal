@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestSuite">
+              <span class="suite-name border-failed">TestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestSuite">
+                    <span>C:\DivyJain\DJ_Repo\v8-hds-selenium\suites\testng_smoketest_parallele_execution.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">34 methods, 11 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="QuickOrderFromShoppingCart">QuickOrderFromShoppingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="addPaymentAndCheckoutPage">addPaymentAndCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="addToSavedListFromShoppingCart">addToSavedListFromShoppingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="captureWebOrderNumber">captureWebOrderNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="clickOnCheckOutModal">clickOnCheckOutModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="clickShoppingCartIcon">clickShoppingCartIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="createNewSavedList">createNewSavedList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="placeWebOrder">placeWebOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePNA">validatePNA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePNAResults">validatePNAResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePrintBinLabels">validatePrintBinLabels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="AddProductFromPDP">AddProductFromPDP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="AddProductFromPDP">AddProductFromPDP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="AddProductFromPLP">AddProductFromPLP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="AddProductFromPLP">AddProductFromPLP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="QuickOrderFromShoppingCart">QuickOrderFromShoppingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="SearchByProductDesc">SearchByProductDesc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="SearchByProductDesc">SearchByProductDesc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="addPaymentAndCheckoutPage">addPaymentAndCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="addToSavedListFromShoppingCart">addToSavedListFromShoppingCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="captureWebOrderNumber">captureWebOrderNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="clickOnCheckOutModal">clickOnCheckOutModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="clickShoppingCartIcon">clickShoppingCartIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="createNewSavedList">createNewSavedList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="placeWebOrder">placeWebOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="searchByProductNumber">searchByProductNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="searchByProductNumber">searchByProductNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="testClearCart">testClearCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="testClearCart">testClearCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePNA">validatePNA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePNAResults">validatePNAResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" hash-for-method="validatePrintBinLabels">validatePrintBinLabels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="QuickOrderFromShoppingCart">
+                  </a> <!-- QuickOrderFromShoppingCart -->
+                  <span class="method-name">QuickOrderFromShoppingCart</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.QuickOrderFromShoppingCart(SmokeTest_Mul_End_To_End_Parallel.java:154)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Quick Order from SC page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPaymentAndCheckoutPage">
+                  </a> <!-- addPaymentAndCheckoutPage -->
+                  <span class="method-name">addPaymentAndCheckoutPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.addPaymentAndCheckoutPage(SmokeTest_Mul_End_To_End_Parallel.java:229)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add Payment and Checkout Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToSavedListFromShoppingCart">
+                  </a> <!-- addToSavedListFromShoppingCart -->
+                  <span class="method-name">addToSavedListFromShoppingCart</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.addToSavedListFromShoppingCart(SmokeTest_Mul_End_To_End_Parallel.java:168)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add to Saved List from SC Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureWebOrderNumber">
+                  </a> <!-- captureWebOrderNumber -->
+                  <span class="method-name">captureWebOrderNumber</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.captureWebOrderNumber(SmokeTest_Mul_End_To_End_Parallel.java:257)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Capture Web Order Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCheckOutModal">
+                  </a> <!-- clickOnCheckOutModal -->
+                  <span class="method-name">clickOnCheckOutModal</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[InternetExplorerDriver: internet explorer on WINDOWS (37f0c060-ede4-44b6-87f5-9a6ca8189790)] -&gt; xpath: //div[@class=&apos;cart-added&apos;]//div[@class=&apos;cart-added__details&apos;]//a[contains(text(),&apos;Checkout&apos;)]] (tried for 450 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{se:ieOptions={browserAttachTimeout=0.0, ie.enableFullPageScreenshot=true, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000.0, ie.useLegacyFileUploadDialogHandling=false, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0.0, ie.browserCommandLineSwitches=, requireWindowFocus=true, initialBrowserUrl=https://qa2.hdsupplysolutions.com, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, version=11, platform=WINDOWS, unexpectedAlertBehaviour=dismiss}]
+Session ID: 37f0c060-ede4-44b6-87f5-9a6ca8189790
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.tools.WaitTool.waitForElement(WaitTool.java:82)
+	at com.selenium.ebiz.pageobject.SearchPage.clickOnCheckoutButton(SearchPage.java:117)
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.clickOnCheckOutModal(SmokeTest_Mul_End_To_End_Parallel.java:149)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click on CheckOut from Modal on PLP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickShoppingCartIcon">
+                  </a> <!-- clickShoppingCartIcon -->
+                  <span class="method-name">clickShoppingCartIcon</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.clickShoppingCartIcon(SmokeTest_Mul_End_To_End_Parallel.java:208)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click Cart Icon)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewSavedList">
+                  </a> <!-- createNewSavedList -->
+                  <span class="method-name">createNewSavedList</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.createNewSavedList(SmokeTest_Mul_End_To_End_Parallel.java:181)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Creating New Saved List)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeWebOrder">
+                  </a> <!-- placeWebOrder -->
+                  <span class="method-name">placeWebOrder</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.placeWebOrder(SmokeTest_Mul_End_To_End_Parallel.java:251)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Place web order)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePNA">
+                  </a> <!-- validatePNA -->
+                  <span class="method-name">validatePNA</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePNA(SmokeTest_Mul_End_To_End_Parallel.java:214)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate P&A)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePNAResults">
+                  </a> <!-- validatePNAResults -->
+                  <span class="method-name">validatePNAResults</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePNAResults(SmokeTest_Mul_End_To_End_Parallel.java:238)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate P&A results from SC Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePrintBinLabels">
+                  </a> <!-- validatePrintBinLabels -->
+                  <span class="method-name">validatePrintBinLabels</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePrintBinLabels(SmokeTest_Mul_End_To_End_Parallel.java:194)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate Print Bin Labels)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProductFromPDP">
+                  </a> <!-- AddProductFromPDP -->
+                  <span class="method-name">AddProductFromPDP</span>
+                  <em>
+(Add Product to Cart from PDP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProductFromPDP">
+                  </a> <!-- AddProductFromPDP -->
+                  <span class="method-name">AddProductFromPDP</span>
+                  <em>
+(Add Product to Cart from PDP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProductFromPLP">
+                  </a> <!-- AddProductFromPLP -->
+                  <span class="method-name">AddProductFromPLP</span>
+                  <em>
+(Add Product to Cart from PLP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProductFromPLP">
+                  </a> <!-- AddProductFromPLP -->
+                  <span class="method-name">AddProductFromPLP</span>
+                  <em>
+(Add Product to Cart from PLP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QuickOrderFromShoppingCart">
+                  </a> <!-- QuickOrderFromShoppingCart -->
+                  <span class="method-name">QuickOrderFromShoppingCart</span>
+                  <em>
+(Quick Order from SC page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByProductDesc">
+                  </a> <!-- SearchByProductDesc -->
+                  <span class="method-name">SearchByProductDesc</span>
+                  <em>
+(Search by Product Description)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByProductDesc">
+                  </a> <!-- SearchByProductDesc -->
+                  <span class="method-name">SearchByProductDesc</span>
+                  <em>
+(Search by Product Description)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPaymentAndCheckoutPage">
+                  </a> <!-- addPaymentAndCheckoutPage -->
+                  <span class="method-name">addPaymentAndCheckoutPage</span>
+                  <em>
+(Add Payment and Checkout Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToSavedListFromShoppingCart">
+                  </a> <!-- addToSavedListFromShoppingCart -->
+                  <span class="method-name">addToSavedListFromShoppingCart</span>
+                  <em>
+(Add to Saved List from SC Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureWebOrderNumber">
+                  </a> <!-- captureWebOrderNumber -->
+                  <span class="method-name">captureWebOrderNumber</span>
+                  <em>
+(Capture Web Order Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnCheckOutModal">
+                  </a> <!-- clickOnCheckOutModal -->
+                  <span class="method-name">clickOnCheckOutModal</span>
+                  <em>
+(Click on CheckOut from Modal on PLP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickShoppingCartIcon">
+                  </a> <!-- clickShoppingCartIcon -->
+                  <span class="method-name">clickShoppingCartIcon</span>
+                  <em>
+(Click Cart Icon)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewSavedList">
+                  </a> <!-- createNewSavedList -->
+                  <span class="method-name">createNewSavedList</span>
+                  <em>
+(Creating New Saved List)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeWebOrder">
+                  </a> <!-- placeWebOrder -->
+                  <span class="method-name">placeWebOrder</span>
+                  <em>
+(Place web order)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByProductNumber">
+                  </a> <!-- searchByProductNumber -->
+                  <span class="method-name">searchByProductNumber</span>
+                  <em>
+(Search by Product Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByProductNumber">
+                  </a> <!-- searchByProductNumber -->
+                  <span class="method-name">searchByProductNumber</span>
+                  <em>
+(Search by Product Number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClearCart">
+                  </a> <!-- testClearCart -->
+                  <span class="method-name">testClearCart</span>
+                  <em>
+(Cart Empty Confirmation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClearCart">
+                  </a> <!-- testClearCart -->
+                  <span class="method-name">testClearCart</span>
+                  <em>
+(Cart Empty Confirmation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                  <em>
+(Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                  <em>
+(Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePNA">
+                  </a> <!-- validatePNA -->
+                  <span class="method-name">validatePNA</span>
+                  <em>
+(Validate P&A)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePNAResults">
+                  </a> <!-- validatePNAResults -->
+                  <span class="method-name">validatePNAResults</span>
+                  <em>
+(Validate P&A results from SC Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePrintBinLabels">
+                  </a> <!-- validatePrintBinLabels -->
+                  <span class="method-name">validatePrintBinLabels</span>
+                  <em>
+(Validate Print Bin Labels)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+        </div> <!-- panel TestSuite -->
+        <div panel-name="test-xml-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\DivyJain\DJ_Repo\v8-hds-selenium\suites\testng_smoketest_parallele_execution.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;SmokeTest2&quot;&gt;
+    &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest2 --&gt;
+  &lt;test name=&quot;SmokeTest3&quot;&gt;
+    &lt;parameter name=&quot;browserType&quot; value=&quot;ie&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTest3 --&gt;
+&lt;/suite&gt; &lt;!-- TestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SmokeTest2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SmokeTest3 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestSuite');
+function tableData_TestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(34);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'clickOnCheckOutModal')
+data.setCell(0, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(0, 3, 450050);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testClearCart')
+data.setCell(1, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(1, 3, 116094);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SearchByProductDesc')
+data.setCell(2, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(2, 3, 25546);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testClearCart')
+data.setCell(3, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(3, 3, 19546);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addPaymentAndCheckoutPage')
+data.setCell(4, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(4, 3, 15585);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'QuickOrderFromShoppingCart')
+data.setCell(5, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(5, 3, 12817);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addToSavedListFromShoppingCart')
+data.setCell(6, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(6, 3, 12368);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchByProductNumber')
+data.setCell(7, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(7, 3, 9961);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createNewSavedList')
+data.setCell(8, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(8, 3, 8422);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchByProductNumber')
+data.setCell(9, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(9, 3, 7778);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLogin')
+data.setCell(10, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(10, 3, 6883);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLogin')
+data.setCell(11, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(11, 3, 6824);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'placeWebOrder')
+data.setCell(12, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(12, 3, 6366);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SearchByProductDesc')
+data.setCell(13, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(13, 3, 4336);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'clickOnCheckOutModal')
+data.setCell(14, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(14, 3, 3813);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'clickShoppingCartIcon')
+data.setCell(15, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(15, 3, 2864);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'AddProductFromPDP')
+data.setCell(16, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(16, 3, 2450);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validatePrintBinLabels')
+data.setCell(17, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(17, 3, 1523);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'AddProductFromPDP')
+data.setCell(18, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(18, 3, 1322);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'AddProductFromPLP')
+data.setCell(19, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(19, 3, 733);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'AddProductFromPLP')
+data.setCell(20, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(20, 3, 325);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validatePNAResults')
+data.setCell(21, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(21, 3, 143);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validatePNA')
+data.setCell(22, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(22, 3, 133);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'captureWebOrderNumber')
+data.setCell(23, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(23, 3, 53);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validatePNA')
+data.setCell(24, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(24, 3, 4);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'QuickOrderFromShoppingCart')
+data.setCell(25, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(25, 3, 3);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'clickShoppingCartIcon')
+data.setCell(26, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'addToSavedListFromShoppingCart')
+data.setCell(27, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validatePrintBinLabels')
+data.setCell(28, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'placeWebOrder')
+data.setCell(29, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'createNewSavedList')
+data.setCell(30, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'addPaymentAndCheckoutPage')
+data.setCell(31, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'captureWebOrderNumber')
+data.setCell(32, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validatePNAResults')
+data.setCell(33, 2, 'com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel')
+data.setCell(33, 3, 0);
+window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-TestSuite">
+              </div> <!-- times-div-TestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverSetup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">driverSetup(ie)</span>
+                <span class="method-start">274 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">5999 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">10818 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLogin status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testLogin()[pri:0...)</span>
+                <span class="method-start">12986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testClearCart</span>
+                <span class="method-start">13003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testLogin status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testLogin()[pri:0...)</span>
+                <span class="method-start">17644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testClearCart</span>
+                <span class="method-start">17645 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testClearCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testClearCart...)</span>
+                <span class="method-start">32551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">searchByProductNumber</span>
+                <span class="method-start">32552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=searchByProductNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.searc...)</span>
+                <span class="method-start">40331 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddProductFromPDP</span>
+                <span class="method-start">40333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddProductFromPDP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProduc...)</span>
+                <span class="method-start">41659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">SearchByProductDesc</span>
+                <span class="method-start">41665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=SearchByProductDesc status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.SearchB...)</span>
+                <span class="method-start">46007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddProductFromPLP</span>
+                <span class="method-start">46008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddProductFromPLP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProduc...)</span>
+                <span class="method-start">46335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">clickOnCheckOutModal</span>
+                <span class="method-start">46336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=clickOnCheckOutModal status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.clickO...)</span>
+                <span class="method-start">50150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">QuickOrderFromShoppingCart</span>
+                <span class="method-start">50151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=QuickOrderFromShoppingCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel....)</span>
+                <span class="method-start">62970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addToSavedListFromShoppingCart</span>
+                <span class="method-start">62971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addToSavedListFromShoppingCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Paral...)</span>
+                <span class="method-start">75341 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">createNewSavedList</span>
+                <span class="method-start">75342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createNewSavedList status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.createNe...)</span>
+                <span class="method-start">83766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validatePrintBinLabels</span>
+                <span class="method-start">83769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePrintBinLabels status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.vali...)</span>
+                <span class="method-start">85294 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">clickShoppingCartIcon</span>
+                <span class="method-start">85295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=clickShoppingCartIcon status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.click...)</span>
+                <span class="method-start">88162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validatePNA</span>
+                <span class="method-start">88163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePNA status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.validatePNA()[p...)</span>
+                <span class="method-start">88298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addPaymentAndCheckoutPage</span>
+                <span class="method-start">88299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addPaymentAndCheckoutPage status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.a...)</span>
+                <span class="method-start">103887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validatePNAResults</span>
+                <span class="method-start">103888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePNAResults status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.validate...)</span>
+                <span class="method-start">104032 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">placeWebOrder</span>
+                <span class="method-start">104034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=placeWebOrder status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.placeWebOrder...)</span>
+                <span class="method-start">110401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">captureWebOrderNumber</span>
+                <span class="method-start">110402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=captureWebOrderNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.captu...)</span>
+                <span class="method-start">110460 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">110461 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testClearCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testClearCart...)</span>
+                <span class="method-start">133740 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">searchByProductNumber</span>
+                <span class="method-start">133742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=searchByProductNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.searc...)</span>
+                <span class="method-start">143705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddProductFromPDP</span>
+                <span class="method-start">143707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddProductFromPDP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProduc...)</span>
+                <span class="method-start">146159 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">SearchByProductDesc</span>
+                <span class="method-start">146161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=SearchByProductDesc status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.SearchB...)</span>
+                <span class="method-start">171709 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AddProductFromPLP</span>
+                <span class="method-start">171711 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AddProductFromPLP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProduc...)</span>
+                <span class="method-start">172446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickOnCheckOutModal</span>
+                <span class="method-start">172447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=clickOnCheckOutModal status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.clickO...)</span>
+                <span class="method-start">622507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">QuickOrderFromShoppingCart</span>
+                <span class="method-start">622517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addToSavedListFromShoppingCart</span>
+                <span class="method-start">622522 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=QuickOrderFromShoppingCart status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel....)</span>
+                <span class="method-start">622522 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addToSavedListFromShoppingCart status=FAILURE method=SmokeTest_Mul_End_To_End_Paral...)</span>
+                <span class="method-start">622525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createNewSavedList</span>
+                <span class="method-start">622526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createNewSavedList status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.createNe...)</span>
+                <span class="method-start">622529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatePrintBinLabels</span>
+                <span class="method-start">622529 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePrintBinLabels status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.vali...)</span>
+                <span class="method-start">622531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickShoppingCartIcon</span>
+                <span class="method-start">622532 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=clickShoppingCartIcon status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.click...)</span>
+                <span class="method-start">622535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatePNA</span>
+                <span class="method-start">622536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePNA status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.validatePNA()[p...)</span>
+                <span class="method-start">622541 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addPaymentAndCheckoutPage</span>
+                <span class="method-start">622542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addPaymentAndCheckoutPage status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.a...)</span>
+                <span class="method-start">622544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatePNAResults</span>
+                <span class="method-start">622545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=validatePNAResults status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.validate...)</span>
+                <span class="method-start">622546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeWebOrder</span>
+                <span class="method-start">622547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=placeWebOrder status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.placeWebOrder...)</span>
+                <span class="method-start">622549 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureWebOrderNumber</span>
+                <span class="method-start">622550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=captureWebOrderNumber status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.captu...)</span>
+                <span class="method-start">622552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">622553 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

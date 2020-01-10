@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.selenium.ebiz.LISTENERS.TestListener"/>
+    <listener class-name="com.selenium.ebiz.LISTENERS.AnnotationTransformer"/>
+  </listeners>
+  <test name="Smoke Test(failed)">
+    <classes>
+      <class name="com.selenium.ebiz.SMOKETEST.SmokeTest_End_To_End_Scenario8">
+        <methods>
+          <include name="AddListToCart"/>
+          <include name="navigateToshoppingCart"/>
+          <include name="afterMethod"/>
+          <include name="verifyPartNumberAndQuantity"/>
+          <include name="driverSetup"/>
+          <include name="placeWebOrder"/>
+          <include name="captureWebOrderNumber"/>
+          <include name="teardown"/>
+          <include name="clickOnSecondProdut"/>
+          <include name="clickOnAddToCart"/>
+          <include name="closeAddToCartSuccessPopup"/>
+          <include name="AddProductToNewSaveList"/>
+          <include name="navigateToFrequentlyPurchasedPage"/>
+          <include name="getPartNumberAndQuantityDisplayed"/>
+          <include name="clickOnFirstProdut"/>
+          <include name="navigaeToFrequentlyPurchasePage"/>
+          <include name="NavigateToAddPaymentAndCheckoutPage"/>
+        </methods>
+      </class> <!-- com.selenium.ebiz.SMOKETEST.SmokeTest_End_To_End_Scenario8 -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

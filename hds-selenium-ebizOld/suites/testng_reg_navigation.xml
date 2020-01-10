@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="Login Test">
+		<classes>
+			<class name="com.selenium.ebiz.navigation.AlternateTopLevelCategoriesPage" /> 
+			<class name="com.selenium.ebiz.navigation.CustomizeThisItemSubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.HomePageBreadCrumbBySubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.HomePageBreadCrumbGuestUser_NOTWORKING" /> 
+			<class name="com.selenium.ebiz.navigation.HomePageBreadCrumbLoggedInUser" /> 
+			<class name="com.selenium.ebiz.navigation.HomePageBreadCrumbLoggedInUser_NOTWORKING" /> 
+			<class name="com.selenium.ebiz.navigation.ImageMouseOverSubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.IncreaseDecreaseQuantitySubCategroy" /> 
+			<class name="com.selenium.ebiz.navigation.PaginationSubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.ProductAttributesSubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.ShopByCategorySelectSubCategory" /> 
+			<class name="com.selenium.ebiz.navigation.ShoppingCartContinueShoppingBreadcrumb_WORKING" /> 
+			<class name="com.selenium.ebiz.navigation.TopLevelCategoriesBreadcrumbToHomepage" /> 
+			<class name="com.selenium.ebiz.navigation.TopLevelCategorieseSpot" /> 
+			<class name="com.selenium.ebiz.navigation.TopProductsCategoryCarousel" /> 
+			<class name="com.selenium.ebiz.navigation.VerifyL2CategoryProductBlank" /> 
+			<class name="com.selenium.ebiz.navigation.ViewCategoryProductsFromLeftNavigation" /> 
+			<class name="com.selenium.ebiz.navigation.ViewCategoryProductsFromLeftNavigation_WORKING" /> 
+			<class name="com.selenium.ebiz.navigation.ViewCategoryProductsFromTopCategories" /> 
+			<class name="com.selenium.ebiz.navigation.ViewCategoryProductsFromTopCategories_WORKING" /> 
+		</classes>
+	</test>
+</suite>

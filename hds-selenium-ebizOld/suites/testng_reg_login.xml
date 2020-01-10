@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="LOGIN">
+		<classes>
+			<!-- <class name="com.selenium.ebiz.account_management.login.ContentRecommendationLoggedInUser_WORKING" /> -->
+			<class name="com.selenium.ebiz.account_management.login.ExistingUserLogin_WORKING" />
+			<!-- <class name="com.selenium.ebiz.account_management.login.ExploreHDSupplyIndustyTypeDropdown_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.ForgotPasswordGuestUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.ForgotUserNameGuestUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.GenericSalesRepInfoLoggedInUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomePageAuthenticatedUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomePageContentHeroLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomePageContentImageCarousel_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomepageForLoggedInUserwithWinRel_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomePageLeftNavCategoriesLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.HomePageLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.LoginFromBrowsePage_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.LoginTestAllScenarios_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.MostPopularTopCategoriesGuestUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.RememberLoginDetailsGuestUser_Working" />
+			<class name="com.selenium.ebiz.account_management.login.SalesRepInfoLoggedInUser_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.SearchForASpecificCategoryAuthenticated" />
+			<class name="com.selenium.ebiz.account_management.login.SeeMoreTopCategories_NOTWORKING" />
+			<class name="com.selenium.ebiz.account_management.login.ShopByCategorySelectSubCategoryGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.account_management.login.ShopByCategorySelectSubCategoryLoggedInUser" />
+			<class name="com.selenium.ebiz.account_management.login.StayConnectedHomePageLoggedInUser" /> -->
+		</classes>
+	</test>
+</suite>

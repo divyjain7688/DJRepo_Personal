@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="11" ignored="0" total="34" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="622569" started-at="2018-11-23T08:04:31Z" finished-at="2018-11-23T08:14:53Z">
+    <groups>
+    </groups>
+    <test name="SmokeTest2" duration-ms="110477" started-at="2018-11-23T08:04:31Z" finished-at="2018-11-23T08:06:21Z">
+      <class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel">
+        <test-method status="PASS" signature="driverSetup(java.lang.String)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="driverSetup" is-config="true" duration-ms="5969" started-at="2018-11-23T13:34:31Z" finished-at="2018-11-23T13:34:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="testLogin" duration-ms="6883" started-at="2018-11-23T13:34:37Z" description="Login" finished-at="2018-11-23T13:34:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:34:44Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:34:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testLogin()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testClearCart()[pri:1, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="testClearCart" duration-ms="19546" started-at="2018-11-23T13:34:44Z" description="Cart Empty Confirmation" finished-at="2018-11-23T13:35:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClearCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:03Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClearCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testClearCart()[pri:1, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="searchByProductNumber()[pri:2, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="searchByProductNumber" duration-ms="7778" started-at="2018-11-23T13:35:03Z" description="Search by Product Number" finished-at="2018-11-23T13:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByProductNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:11Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchByProductNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.searchByProductNumber()[pri:2, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AddProductFromPDP()[pri:3, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="AddProductFromPDP" duration-ms="1322" started-at="2018-11-23T13:35:11Z" description="Add Product to Cart from PDP" finished-at="2018-11-23T13:35:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductFromPDP -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:35:12Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddProductFromPDP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProductFromPDP()[pri:3, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="SearchByProductDesc()[pri:4, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="SearchByProductDesc" duration-ms="4336" started-at="2018-11-23T13:35:12Z" description="Search by Product Description" finished-at="2018-11-23T13:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchByProductDesc -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:17Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchByProductDesc status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.SearchByProductDesc()[pri:4, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AddProductFromPLP()[pri:5, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="AddProductFromPLP" duration-ms="325" started-at="2018-11-23T13:35:17Z" description="Add Product to Cart from PLP" finished-at="2018-11-23T13:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductFromPLP -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:17Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddProductFromPLP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProductFromPLP()[pri:5, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="clickOnCheckOutModal()[pri:6, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="clickOnCheckOutModal" duration-ms="3813" started-at="2018-11-23T13:35:17Z" description="Click on CheckOut from Modal on PLP" finished-at="2018-11-23T13:35:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckOutModal -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:21Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnCheckOutModal status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.clickOnCheckOutModal()[pri:6, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="QuickOrderFromShoppingCart()[pri:7, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="QuickOrderFromShoppingCart" duration-ms="12817" started-at="2018-11-23T13:35:21Z" description="Quick Order from SC page" finished-at="2018-11-23T13:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuickOrderFromShoppingCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:34Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QuickOrderFromShoppingCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.QuickOrderFromShoppingCart()[pri:7, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="addToSavedListFromShoppingCart()[pri:8, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="addToSavedListFromShoppingCart" duration-ms="12368" started-at="2018-11-23T13:35:34Z" description="Add to Saved List from SC Page" finished-at="2018-11-23T13:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToSavedListFromShoppingCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:46Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToSavedListFromShoppingCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.addToSavedListFromShoppingCart()[pri:8, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="createNewSavedList()[pri:9, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="createNewSavedList" duration-ms="8422" started-at="2018-11-23T13:35:46Z" description="Creating New Saved List" finished-at="2018-11-23T13:35:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewSavedList -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:35:54Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewSavedList status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.createNewSavedList()[pri:9, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="validatePrintBinLabels()[pri:10, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="validatePrintBinLabels" duration-ms="1523" started-at="2018-11-23T13:35:54Z" description="Validate Print Bin Labels" finished-at="2018-11-23T13:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrintBinLabels -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:56Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePrintBinLabels status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.validatePrintBinLabels()[pri:10, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="clickShoppingCartIcon()[pri:11, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="clickShoppingCartIcon" duration-ms="2864" started-at="2018-11-23T13:35:56Z" description="Click Cart Icon" finished-at="2018-11-23T13:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickShoppingCartIcon -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:59Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickShoppingCartIcon status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.clickShoppingCartIcon()[pri:11, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="validatePNA()[pri:12, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="validatePNA" duration-ms="133" started-at="2018-11-23T13:35:59Z" description="Validate P&amp;A" finished-at="2018-11-23T13:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePNA -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:35:59Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePNA status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.validatePNA()[pri:12, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="addPaymentAndCheckoutPage()[pri:13, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="addPaymentAndCheckoutPage" duration-ms="15585" started-at="2018-11-23T13:35:59Z" description="Add Payment and Checkout Page" finished-at="2018-11-23T13:36:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPaymentAndCheckoutPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:36:14Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPaymentAndCheckoutPage status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.addPaymentAndCheckoutPage()[pri:13, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="validatePNAResults()[pri:14, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="validatePNAResults" duration-ms="143" started-at="2018-11-23T13:36:14Z" description="Validate P&amp;A results from SC Page" finished-at="2018-11-23T13:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePNAResults -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:36:15Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePNAResults status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.validatePNAResults()[pri:14, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="placeWebOrder()[pri:15, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="placeWebOrder" duration-ms="6366" started-at="2018-11-23T13:36:15Z" description="Place web order" finished-at="2018-11-23T13:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeWebOrder -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:36:21Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeWebOrder status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.placeWebOrder()[pri:15, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="captureWebOrderNumber()[pri:16, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="captureWebOrderNumber" duration-ms="53" started-at="2018-11-23T13:36:21Z" description="Capture Web Order Number" finished-at="2018-11-23T13:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureWebOrderNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:36:21Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=captureWebOrderNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.captureWebOrderNumber()[pri:16, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@53ab0286]" name="teardown" is-config="true" duration-ms="0" started-at="2018-11-23T13:36:21Z" finished-at="2018-11-23T13:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel -->
+    </test> <!-- SmokeTest2 -->
+    <test name="SmokeTest3" duration-ms="622467" started-at="2018-11-23T08:04:31Z" finished-at="2018-11-23T08:14:53Z">
+      <class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel">
+        <test-method status="PASS" signature="driverSetup(java.lang.String)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="driverSetup" is-config="true" duration-ms="10543" started-at="2018-11-23T13:34:31Z" finished-at="2018-11-23T13:34:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="testLogin" duration-ms="6824" started-at="2018-11-23T13:34:41Z" description="Login" finished-at="2018-11-23T13:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:34:48Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testLogin()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testClearCart()[pri:1, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="testClearCart" duration-ms="116094" started-at="2018-11-23T13:34:48Z" description="Cart Empty Confirmation" finished-at="2018-11-23T13:36:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClearCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:36:44Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClearCart status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.testClearCart()[pri:1, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="searchByProductNumber()[pri:2, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="searchByProductNumber" duration-ms="9961" started-at="2018-11-23T13:36:44Z" description="Search by Product Number" finished-at="2018-11-23T13:36:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByProductNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:36:54Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchByProductNumber status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.searchByProductNumber()[pri:2, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AddProductFromPDP()[pri:3, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="AddProductFromPDP" duration-ms="2450" started-at="2018-11-23T13:36:54Z" description="Add Product to Cart from PDP" finished-at="2018-11-23T13:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductFromPDP -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:36:57Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:36:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddProductFromPDP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProductFromPDP()[pri:3, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="SearchByProductDesc()[pri:4, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="SearchByProductDesc" duration-ms="25546" started-at="2018-11-23T13:36:57Z" description="Search by Product Description" finished-at="2018-11-23T13:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchByProductDesc -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:37:22Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchByProductDesc status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.SearchByProductDesc()[pri:4, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AddProductFromPLP()[pri:5, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="AddProductFromPLP" duration-ms="733" started-at="2018-11-23T13:37:22Z" description="Add Product to Cart from PLP" finished-at="2018-11-23T13:37:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductFromPLP -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:37:23Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:37:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddProductFromPLP status=SUCCESS method=SmokeTest_Mul_End_To_End_Parallel.AddProductFromPLP()[pri:5, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="clickOnCheckOutModal()[pri:6, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="clickOnCheckOutModal" duration-ms="450050" started-at="2018-11-23T13:37:23Z" description="Click on CheckOut from Modal on PLP" finished-at="2018-11-23T13:44:53Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[InternetExplorerDriver: internet explorer on WINDOWS (37f0c060-ede4-44b6-87f5-9a6ca8189790)] -> xpath: //div[@class='cart-added']//div[@class='cart-added__details']//a[contains(text(),'Checkout')]] (tried for 450 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'W7VDIHPQC16WPL', ip: '10.224.150.138', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{se:ieOptions={browserAttachTimeout=0.0, ie.enableFullPageScreenshot=true, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000.0, ie.useLegacyFileUploadDialogHandling=false, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0.0, ie.browserCommandLineSwitches=, requireWindowFocus=true, initialBrowserUrl=https://qa2.hdsupplysolutions.com, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, version=11, platform=WINDOWS, unexpectedAlertBehaviour=dismiss}]
+Session ID: 37f0c060-ede4-44b6-87f5-9a6ca8189790]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[InternetExplorerDriver: internet explorer on WINDOWS (37f0c060-ede4-44b6-87f5-9a6ca8189790)] -> xpath: //div[@class='cart-added']//div[@class='cart-added__details']//a[contains(text(),'Checkout')]] (tried for 450 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'W7VDIHPQC16WPL', ip: '10.224.150.138', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{se:ieOptions={browserAttachTimeout=0.0, ie.enableFullPageScreenshot=true, enablePersistentHover=false, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, ignoreZoomSetting=true, ie.fileUploadDialogTimeout=3000.0, ie.useLegacyFileUploadDialogHandling=false, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0.0, ie.browserCommandLineSwitches=, requireWindowFocus=true, initialBrowserUrl=https://qa2.hdsupplysolutions.com, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, version=11, platform=WINDOWS, unexpectedAlertBehaviour=dismiss}]
+Session ID: 37f0c060-ede4-44b6-87f5-9a6ca8189790
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.tools.WaitTool.waitForElement(WaitTool.java:82)
+	at com.selenium.ebiz.pageobject.SearchPage.clickOnCheckoutButton(SearchPage.java:117)
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.clickOnCheckOutModal(SmokeTest_Mul_End_To_End_Parallel.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckOutModal -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnCheckOutModal status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.clickOnCheckOutModal()[pri:6, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="QuickOrderFromShoppingCart()[pri:7, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="QuickOrderFromShoppingCart" duration-ms="3" started-at="2018-11-23T13:44:53Z" description="Quick Order from SC page" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.QuickOrderFromShoppingCart(SmokeTest_Mul_End_To_End_Parallel.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuickOrderFromShoppingCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=QuickOrderFromShoppingCart status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.QuickOrderFromShoppingCart()[pri:7, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="addToSavedListFromShoppingCart()[pri:8, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="addToSavedListFromShoppingCart" duration-ms="2" started-at="2018-11-23T13:44:53Z" description="Add to Saved List from SC Page" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.addToSavedListFromShoppingCart(SmokeTest_Mul_End_To_End_Parallel.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToSavedListFromShoppingCart -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToSavedListFromShoppingCart status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.addToSavedListFromShoppingCart()[pri:8, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="createNewSavedList()[pri:9, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="createNewSavedList" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Creating New Saved List" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.createNewSavedList(SmokeTest_Mul_End_To_End_Parallel.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewSavedList -->
+        <test-method status="FAIL" signature="validatePrintBinLabels()[pri:10, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="validatePrintBinLabels" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Validate Print Bin Labels" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePrintBinLabels(SmokeTest_Mul_End_To_End_Parallel.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrintBinLabels -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewSavedList status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.createNewSavedList()[pri:9, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePrintBinLabels status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.validatePrintBinLabels()[pri:10, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="clickShoppingCartIcon()[pri:11, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="clickShoppingCartIcon" duration-ms="2" started-at="2018-11-23T13:44:53Z" description="Click Cart Icon" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.clickShoppingCartIcon(SmokeTest_Mul_End_To_End_Parallel.java:208)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickShoppingCartIcon -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickShoppingCartIcon status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.clickShoppingCartIcon()[pri:11, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="validatePNA()[pri:12, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="validatePNA" duration-ms="4" started-at="2018-11-23T13:44:53Z" description="Validate P&amp;A" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePNA(SmokeTest_Mul_End_To_End_Parallel.java:214)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePNA -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePNA status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.validatePNA()[pri:12, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="addPaymentAndCheckoutPage()[pri:13, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="addPaymentAndCheckoutPage" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Add Payment and Checkout Page" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.addPaymentAndCheckoutPage(SmokeTest_Mul_End_To_End_Parallel.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPaymentAndCheckoutPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPaymentAndCheckoutPage status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.addPaymentAndCheckoutPage()[pri:13, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="validatePNAResults()[pri:14, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="validatePNAResults" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Validate P&amp;A results from SC Page" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.validatePNAResults(SmokeTest_Mul_End_To_End_Parallel.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePNAResults -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePNAResults status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.validatePNAResults()[pri:14, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="placeWebOrder()[pri:15, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="placeWebOrder" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Place web order" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.placeWebOrder(SmokeTest_Mul_End_To_End_Parallel.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeWebOrder -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeWebOrder status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.placeWebOrder()[pri:15, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="captureWebOrderNumber()[pri:16, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="captureWebOrderNumber" duration-ms="1" started-at="2018-11-23T13:44:53Z" description="Capture Web Order Number" finished-at="2018-11-23T13:44:53Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel.captureWebOrderNumber(SmokeTest_Mul_End_To_End_Parallel.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureWebOrderNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" description="Throw the test execution results into saucelabs" finished-at="2018-11-23T13:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=captureWebOrderNumber status=FAILURE method=SmokeTest_Mul_End_To_End_Parallel.captureWebOrderNumber()[pri:16, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel@27a5328c]" name="teardown" is-config="true" duration-ms="0" started-at="2018-11-23T13:44:53Z" finished-at="2018-11-23T13:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel -->
+    </test> <!-- SmokeTest3 -->
+  </suite> <!-- TestSuite -->
+</testng-results>

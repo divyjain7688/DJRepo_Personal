@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="HEADER">
+		<classes>
+			<class name="com.selenium.ebiz.header.CobrandLogoInHeader_NOTWORKING" />
+			<class name="com.selenium.ebiz.header.DisplayPromotionalStaticContentPagesGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.header.DisplayPromotionalStaticContentPagesLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.header.DisplayStaticContentPageGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.header.DisplayStaticContentPageLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.header.DisplayStaticWebsiteHelpInUtilityBar_WORKING" />
+			<class name="com.selenium.ebiz.header.HeaderHDLogo" />
+			<class name="com.selenium.ebiz.header.HeaderServiceFlyout" />
+			<class name="com.selenium.ebiz.header.HeaderShopByCategory" />
+			<class name="com.selenium.ebiz.header.HomepageHeaderDisplayGuestsUser" />
+			<class name="com.selenium.ebiz.header.HomepageHeaderDisplayLoggedInUser" />
+			<class name="com.selenium.ebiz.header.MyAccountQuickLinksInUtilityBarGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.header.MyAccountQuickLinksInUtilityBarLoggedInUser_WORKING" />
+			<class name="com.selenium.ebiz.header.QuickOrderAuthenticatedUser_WORKING" />
+			<class name="com.selenium.ebiz.header.QuickOrderGuestUser_WORKING" />
+			<class name="com.selenium.ebiz.header.QuickOrderMiniFormCheckout" />
+			<class name="com.selenium.ebiz.header.QuickOrderMiniFormHeaderGuestUser" />
+		</classes>
+	</test>
+</suite>

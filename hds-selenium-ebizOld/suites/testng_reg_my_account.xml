@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="MY ACCOUNT">
+		<classes>
+			<class name="com.selenium.ebiz.account_management.my_account.AddNewShippingAddress_WORKING" /> 
+			<class name="com.selenium.ebiz.account_management.my_account.ClickMyAccountLinkAuthenticatedUser_WORKING" />
+			<class name="com.selenium.ebiz.account_management.my_account.DisplayCookiedHomePageforReturningGuestUser_WORKING" /> 
+			<class name="com.selenium.ebiz.account_management.my_account.ManageExistingShippingAddress_WORKING" /> 
+			<class name="com.selenium.ebiz.account_management.my_account.MyAccountsChangeEmailAddress_WORKING" /> 
+			<class name="com.selenium.ebiz.account_management.my_account.MyProfileChangePassword_WORKING" /> 
+			<class name="com.selenium.ebiz.account_management.my_account.UpdateCommunicationPreferences_WORKING" /> 
+		</classes>
+	</test>
+</suite>

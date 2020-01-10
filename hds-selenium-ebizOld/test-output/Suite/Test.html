@@ -1,0 +1,837 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 03 10:50:25 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1209 seconds (1209472 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.ForgotUserNameGuestUser_NOTWORKING.ForgotUserNameonSignInUnauthenticatedUser()'><b>ForgotUserNameonSignInUnauthenticatedUser</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.ForgotUserNameGuestUser_NOTWORKING</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52410}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir21128_18905}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c5ba0a91c4abc4c0e5be8cc4705cacb4
+*** Element info: {Using=xpath, value=//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.AccountRetrievalPage.AccountRetrievalCredentialsSendSuccesPage(AccountRetrievalPage.java:113)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ForgotUserNameGuestUser_NOTWORKING.ForgotUserNameonSignInUnauthenticatedUser(ForgotUserNameGuestUser_NOTWORKING.java:76)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076864428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076864428'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52410}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir21128_18905}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c5ba0a91c4abc4c0e5be8cc4705cacb4
+*** Element info: {Using=xpath, value=//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.AccountRetrievalPage.AccountRetrievalCredentialsSendSuccesPage(AccountRetrievalPage.java:113)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ForgotUserNameGuestUser_NOTWORKING.ForgotUserNameonSignInUnauthenticatedUser(ForgotUserNameGuestUser_NOTWORKING.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>73</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.ForgotUserNameGuestUser_NOTWORKING@3e27aa33</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginFromBrowsePage_WORKING.VerifyLoginFromBrowsePageTest()'><b>VerifyLoginFromBrowsePageTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginFromBrowsePage_WORKING</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;account-snapshot__welcome-inner&apos;]/span&apos; (tried for 25 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.&lt;init&gt;(HomePage.java:31)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.clickSignInButton(LoginPage.java:415)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.loginToHdSupplySite(LoginPage.java:428)
+	at com.selenium.ebiz.AccountManagement.LOGIN.LoginFromBrowsePage_WORKING.VerifyLoginFromBrowsePageTest(LoginFromBrowsePage_WORKING.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;account-snapshot__welcome-inner&apos;]/span&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52544}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir5760_7125}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6cd5b3156aeb6479c35088c986f817d3
+*** Element info: {Using=xpath, value=//div[@class=&apos;account-snapshot__welcome-inner&apos;]/span}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803714790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803714790'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;account-snapshot__welcome-inner&apos;]/span&apos; (tried for 25 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.&lt;init&gt;(HomePage.java:31)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.clickSignInButton(LoginPage.java:415)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.loginToHdSupplySite(LoginPage.java:428)
+	at com.selenium.ebiz.AccountManagement.LOGIN.LoginFromBrowsePage_WORKING.VerifyLoginFromBrowsePageTest(LoginFromBrowsePage_WORKING.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;account-snapshot__welcome-inner&apos;]/span&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52544}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir5760_7125}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6cd5b3156aeb6479c35088c986f817d3
+*** Element info: {Using=xpath, value=//div[@class=&apos;account-snapshot__welcome-inner&apos;]/span}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+</pre></div></td>
+<td>177</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginFromBrowsePage_WORKING@2ddc9a9f</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageLoggedInUser_WORKING.displayHomePageForAuthenticatedUserTest()'><b>displayHomePageForAuthenticatedUserTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageLoggedInUser_WORKING</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageLoggedInUser_WORKING.displayHomePageForAuthenticatedUserTest(HomePageLoggedInUser_WORKING.java:46)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace404648659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace404648659'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageLoggedInUser_WORKING.displayHomePageForAuthenticatedUserTest(HomePageLoggedInUser_WORKING.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageLoggedInUser_WORKING@63376bed</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.ForgotPasswordGuestUser_NOTWORKING.forgotPasswordonSignInUnauthenticatedUser()'><b>forgotPasswordonSignInUnauthenticatedUser</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.ForgotPasswordGuestUser_NOTWORKING</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52739}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir4168_27898}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3133cdd7896ccf7a21b4ac315841ded
+*** Element info: {Using=xpath, value=//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.AccountRetrievalPage.AccountRetrievalCredentialsSendSuccesPage(AccountRetrievalPage.java:113)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ForgotPasswordGuestUser_NOTWORKING.forgotPasswordonSignInUnauthenticatedUser(ForgotPasswordGuestUser_NOTWORKING.java:95)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082807696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082807696'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52739}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir4168_27898}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3133cdd7896ccf7a21b4ac315841ded
+*** Element info: {Using=xpath, value=//*[@id=&quot;page&quot;]/div[3]/div/div/div/div/div[1]/div/div[1]/h3}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getText(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.AccountRetrievalPage.AccountRetrievalCredentialsSendSuccesPage(AccountRetrievalPage.java:113)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ForgotPasswordGuestUser_NOTWORKING.forgotPasswordonSignInUnauthenticatedUser(ForgotPasswordGuestUser_NOTWORKING.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>90</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.ForgotPasswordGuestUser_NOTWORKING@4145bad8</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageLeftNavCategoriesLoggedInUser_WORKING.leftNavCategoryValidation()'><b>leftNavCategoryValidation</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageLeftNavCategoriesLoggedInUser_WORKING</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52830}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir19868_4361}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e7af907d62aa95673c56b8e14d1fd926
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy14.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.clear(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.enterUserName(LoginPage.java:395)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.loginToHdSupplySite(LoginPage.java:426)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageLeftNavCategoriesLoggedInUser_WORKING.leftNavCategoryValidation(HomePageLeftNavCategoriesLoggedInUser_WORKING.java:48)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107779742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107779742'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52830}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir19868_4361}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e7af907d62aa95673c56b8e14d1fd926
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:114)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy14.clear(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.clear(EventFiringWebDriver.java:361)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.clear(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.enterUserName(LoginPage.java:395)
+	at com.selenium.ebiz.PAGEOBJECT.LoginPage.loginToHdSupplySite(LoginPage.java:426)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageLeftNavCategoriesLoggedInUser_WORKING.leftNavCategoryValidation(HomePageLeftNavCategoriesLoggedInUser_WORKING.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageLeftNavCategoriesLoggedInUser_WORKING@5ab956d7</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.GenericSalesRepInfoLoggedInUser_NOTWORKING.verifyGenericSalesRepInformation()'><b>verifyGenericSalesRepInformation</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.GenericSalesRepInfoLoggedInUser_NOTWORKING</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.selenium.ebiz.AccountManagement.LOGIN.GenericSalesRepInfoLoggedInUser_NOTWORKING.verifyGenericSalesRepInformation(GenericSalesRepInfoLoggedInUser_NOTWORKING.java:51)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace680306160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace680306160'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.selenium.ebiz.AccountManagement.LOGIN.GenericSalesRepInfoLoggedInUser_NOTWORKING.verifyGenericSalesRepInformation(GenericSalesRepInfoLoggedInUser_NOTWORKING.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.GenericSalesRepInfoLoggedInUser_NOTWORKING@3646a422</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.ExistingUserLogin_WORKING.verifyMergeCartForExistingUserLogIn()'><b>verifyMergeCartForExistingUserLogIn</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.ExistingUserLogin_WORKING</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (c02d529f3a3d7cbe03a64fb2920d040e)] -&gt; xpath: //a[@id=&apos;Header_GlobalLogin_loggedInDropdown_SignOut&apos;]/div/span[contains(text(), &apos;SIGN OUT&apos;)]] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.TOOLS.WaitTool.waitForElement(WaitTool.java:84)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.clickLogoutLinkText(HomePage.java:1370)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.logoutOfApplication(HomePage.java:1393)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ExistingUserLogin_WORKING.verifyMergeCartForExistingUserLogIn(ExistingUserLogin_WORKING.java:80)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688113407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688113407'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (c02d529f3a3d7cbe03a64fb2920d040e)] -&gt; xpath: //a[@id=&apos;Header_GlobalLogin_loggedInDropdown_SignOut&apos;]/div/span[contains(text(), &apos;SIGN OUT&apos;)]] (tried for 60 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.selenium.ebiz.TOOLS.WaitTool.waitForElement(WaitTool.java:84)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.clickLogoutLinkText(HomePage.java:1370)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.logoutOfApplication(HomePage.java:1393)
+	at com.selenium.ebiz.AccountManagement.LOGIN.ExistingUserLogin_WORKING.verifyMergeCartForExistingUserLogIn(ExistingUserLogin_WORKING.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>199</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.ExistingUserLogin_WORKING@2e385cce</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyResourcesFlyout()'><b>verifyResourcesFlyout</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content_HdsHeaderResourcesFlyoutContent&apos;]&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53605}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir19252_2691}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 777623e52bae876bbb95bfc3d522ae7d
+*** Element info: {Using=xpath, value=//div[@id=&apos;content_HdsHeaderResourcesFlyoutContent&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.isResourceFlyoutDisplayed(HomePage.java:2253)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyResourcesFlyout(HomePageAuthenticatedUser_NOTWORKING.java:154)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2125594830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2125594830'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content_HdsHeaderResourcesFlyoutContent&apos;]&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;W7VDIHPQC16WPL&apos;, ip: &apos;10.224.150.211&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53605}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\dj073227\AppData\Local\Temp\scoped_dir19252_2691}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 777623e52bae876bbb95bfc3d522ae7d
+*** Element info: {Using=xpath, value=//div[@id=&apos;content_HdsHeaderResourcesFlyoutContent&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.selenium.ebiz.PAGEOBJECT.HomePage.isResourceFlyoutDisplayed(HomePage.java:2253)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyResourcesFlyout(HomePageAuthenticatedUser_NOTWORKING.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>70</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifySalesRep()'><b>verifySalesRep</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifySalesRep(HomePageAuthenticatedUser_NOTWORKING.java:179)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051890381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051890381'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifySalesRep(HomePageAuthenticatedUser_NOTWORKING.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomepageForLoggedInUserwithWinRel_WORKING.displayHomePageForCobrandUserTest()'><b>displayHomePageForCobrandUserTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomepageForLoggedInUserwithWinRel_WORKING</td>
+<td></td>
+<td>14</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomepageForLoggedInUserwithWinRel_WORKING@750e2b97</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.displayHomePageForUnAuthenticatedUserTest()'><b>displayHomePageForUnAuthenticatedUserTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentImageCarousel_WORKING.heroImageCarouselScroll()'><b>heroImageCarouselScroll</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentImageCarousel_WORKING</td>
+<td></td>
+<td>27</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentImageCarousel_WORKING@d86a6f</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.loginWithEmptyPasswordTest()'><b>loginWithEmptyPasswordTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>2</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.loginWithEmptyUsernameTest()'><b>loginWithEmptyUsernameTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.loginWithIncorrectPasswordTest()'><b>loginWithIncorrectPasswordTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>5</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.loginWithInvalidUsernameTest()'><b>loginWithInvalidUsernameTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>1</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.loginWithValidCredentialAndLogoutTest()'><b>loginWithValidCredentialAndLogoutTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>59</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.moveToEcatalogPage()'><b>moveToEcatalogPage</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>5</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.moveToOfferPage()'><b>moveToOfferPage</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>5</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.searchByKeywordOrPartNumber()'><b>searchByKeywordOrPartNumber</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>47</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentHeroLoggedInUser_WORKING.validateContentHerosDisplay()'><b>validateContentHerosDisplay</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentHeroLoggedInUser_WORKING</td>
+<td></td>
+<td>5</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageContentHeroLoggedInUser_WORKING@738dc9b</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.validateGuestContentHero()'><b>validateGuestContentHero</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.ContentRecommendationLoggedInUser_WORKING.verifyContentRecommandationForAuthenticatedUser()'><b>verifyContentRecommandationForAuthenticatedUser</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.ContentRecommendationLoggedInUser_WORKING</td>
+<td></td>
+<td>18</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.ContentRecommendationLoggedInUser_WORKING@71ba6d4e</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.verifyContentRecommandationForUnauthenticatedUser()'><b>verifyContentRecommandationForUnauthenticatedUser</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.verifyCopyrightMessage()'><b>verifyCopyrightMessage</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.verifyCredentialsWhileLogin()'><b>verifyCredentialsWhileLogin</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>6</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyFooterLinksTest()'><b>verifyFooterLinksTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.verifyFooterLinksTest()'><b>verifyFooterLinksTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyHDSupplyLogoTest()'><b>verifyHDSupplyLogoTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING.verifyLearnSomethingNew()'><b>verifyLearnSomethingNew</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.LoginTestAllScenarios_WORKING@3c77d488</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifyOnceOrderSection()'><b>verifyOnceOrderSection</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>37</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+<tr>
+<td title='com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING.verifySocialNetworkLinksTest()'><b>verifySocialNetworkLinksTest</b><br>Test class: com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.ebiz.AccountManagement.LOGIN.HomePageAuthenticatedUser_NOTWORKING@2892d68</td></tr>
+</table><p>
+</body>
+</html>

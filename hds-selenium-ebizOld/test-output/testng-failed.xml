@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <test name="SmokeTest3(failed)" parallel="tests">
+    <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel">
+        <methods>
+          <include name="clickOnCheckOutModal"/>
+          <include name="addPaymentAndCheckoutPage"/>
+          <include name="QuickOrderFromShoppingCart"/>
+          <include name="addToSavedListFromShoppingCart"/>
+          <include name="validatePNAResults"/>
+          <include name="createNewSavedList"/>
+          <include name="afterMethod"/>
+          <include name="clickShoppingCartIcon"/>
+          <include name="validatePNA"/>
+          <include name="driverSetup"/>
+          <include name="validatePrintBinLabels"/>
+          <include name="placeWebOrder"/>
+          <include name="captureWebOrderNumber"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel -->
+    </classes>
+  </test> <!-- SmokeTest3(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

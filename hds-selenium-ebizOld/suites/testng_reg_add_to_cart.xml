@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="Suite">
+	 <listeners>
+        <listener class-name="com.selenium.ebiz.listener.TestListener"/>
+        <listener class-name="com.selenium.ebiz.listener.AnnotationTransformer"/>
+    </listeners>
+	 <test name="Add To Cart Test">
+		<classes>
+			<class name="com.selenium.ebiz.add_to_cart.AddPartsToCart_ShoppingCart_WORKING" />
+			<class name="com.selenium.ebiz.add_to_cart.AddToCartSubCategoryPage" />
+			<class name="com.selenium.ebiz.add_to_cart.AddToCartSubCategoryPageLoggedInUser" />
+			<class name="com.selenium.ebiz.add_to_cart.ShoppingCartDefaultShippingAddress_NOTWORKING" />
+			<class name="com.selenium.ebiz.add_to_cart.ShoppingCartDeliveryDatesAvailableProducts_NOTWORKING" />
+			<class name="com.selenium.ebiz.add_to_cart.ShoppingCartForUnavailableProducts_NOTWORKING" />
+			<class name="com.selenium.ebiz.add_to_cart.ShoppingCartLinksButtons_NOTWORKING" />
+			<class name="com.selenium.ebiz.add_to_cart.ShoppingCartUnavailableMessaging" />  
+		</classes>
+	</test>
+</suite>

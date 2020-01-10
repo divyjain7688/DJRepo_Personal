@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Selenium TestNG XML FILE -->
+<suite name="TestSuite" thread-count="4" parallel="tests">
+	 <!-- <test name="SmokeTest1">
+		<parameter name="browserType" value="firefox" />	
+		<classes>
+			<class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" /> 
+		</classes>
+	</test> -->
+	
+   <test name="SmokeTest2">
+		<parameter name="browserType" value="chrome" />	
+		<classes>
+			<class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" /> 
+		</classes>
+	</test>  
+	
+	<test name="SmokeTest3">
+		<parameter name="browserType" value="ie" />	
+		<classes>
+			<class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel" /> 
+		</classes>
+	</test> 
+</suite>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel">
+        <methods>
+          <include name="clickOnCheckOutModal"/>
+          <include name="addPaymentAndCheckoutPage"/>
+          <include name="QuickOrderFromShoppingCart"/>
+          <include name="SearchByProductDesc"/>
+          <include name="addToSavedListFromShoppingCart"/>
+          <include name="validatePNAResults"/>
+          <include name="AddProductFromPLP"/>
+          <include name="createNewSavedList"/>
+          <include name="afterMethod"/>
+          <include name="clickShoppingCartIcon"/>
+          <include name="validatePNA"/>
+          <include name="driverSetup"/>
+          <include name="testLogin"/>
+          <include name="AddProductFromPDP"/>
+          <include name="testClearCart"/>
+          <include name="validatePrintBinLabels"/>
+          <include name="searchByProductNumber"/>
+          <include name="placeWebOrder"/>
+          <include name="captureWebOrderNumber"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.selenium.ebiz.smoketest.SmokeTest_Mul_End_To_End_Parallel -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
