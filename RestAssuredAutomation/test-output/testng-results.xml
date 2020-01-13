@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22869" started-at="2020-01-10T12:04:26Z" finished-at="2020-01-10T12:04:49Z">
+  <suite name="Default suite" duration-ms="2760" started-at="2020-01-13T11:01:19Z" finished-at="2020-01-13T11:01:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22869" started-at="2020-01-10T12:04:26Z" finished-at="2020-01-10T12:04:49Z">
-      <class name="udemyApiTest.OAuth2validation">
-        <test-method status="PASS" signature="getCourses()[pri:0, instance:udemyApiTest.OAuth2validation@42dafa95]" name="getCourses" duration-ms="22844" started-at="2020-01-10T17:34:26Z" finished-at="2020-01-10T17:34:49Z">
+    <test name="Default test" duration-ms="2760" started-at="2020-01-13T11:01:19Z" finished-at="2020-01-13T11:01:21Z">
+      <class name="udemyApiTest.PostGoogleApiSerializationWithSpecBuilders">
+        <test-method status="PASS" signature="PostGoogleApiSerialization()[pri:0, instance:udemyApiTest.PostGoogleApiSerializationWithSpecBuilders@3c0ecd4b]" name="PostGoogleApiSerialization" duration-ms="2736" started-at="2020-01-13T16:31:19Z" finished-at="2020-01-13T16:31:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCourses -->
-      </class> <!-- udemyApiTest.OAuth2validation -->
+        </test-method> <!-- PostGoogleApiSerialization -->
+      </class> <!-- udemyApiTest.PostGoogleApiSerializationWithSpecBuilders -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
