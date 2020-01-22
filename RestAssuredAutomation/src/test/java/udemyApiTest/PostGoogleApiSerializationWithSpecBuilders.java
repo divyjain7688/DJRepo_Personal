@@ -43,7 +43,6 @@ public class PostGoogleApiSerializationWithSpecBuilders {
 		addQueryParam("key","qaclick123").
 		setContentType(ContentType.JSON).build();	
 		ResponseSpecification resspec =new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		
 		RequestSpecification res=given().spec(req)
 		.body(a);
 		Response response =res.when().post("/maps/api/place/add/json").
