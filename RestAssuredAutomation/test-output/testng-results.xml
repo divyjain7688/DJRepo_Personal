@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2760" started-at="2020-01-13T11:01:19Z" finished-at="2020-01-13T11:01:21Z">
+  <suite name="Default suite" duration-ms="4104" started-at="2020-02-14T08:39:51Z" finished-at="2020-02-14T08:39:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2760" started-at="2020-01-13T11:01:19Z" finished-at="2020-01-13T11:01:21Z">
-      <class name="udemyApiTest.PostGoogleApiSerializationWithSpecBuilders">
-        <test-method status="PASS" signature="PostGoogleApiSerialization()[pri:0, instance:udemyApiTest.PostGoogleApiSerializationWithSpecBuilders@3c0ecd4b]" name="PostGoogleApiSerialization" duration-ms="2736" started-at="2020-01-13T16:31:19Z" finished-at="2020-01-13T16:31:21Z">
+    <test name="Default test" duration-ms="4104" started-at="2020-02-14T08:39:51Z" finished-at="2020-02-14T08:39:55Z">
+      <class name="udemyApiTest.GetApi">
+        <test-method status="PASS" signature="getAllGooglePlaceIds()[pri:0, instance:udemyApiTest.GetApi@5f341870]" name="getAllGooglePlaceIds" duration-ms="4086" started-at="2020-02-14T14:09:51Z" finished-at="2020-02-14T14:09:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PostGoogleApiSerialization -->
-      </class> <!-- udemyApiTest.PostGoogleApiSerializationWithSpecBuilders -->
+        </test-method> <!-- getAllGooglePlaceIds -->
+      </class> <!-- udemyApiTest.GetApi -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
