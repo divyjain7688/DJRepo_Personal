@@ -1,3 +1,5 @@
+package appiumAutomation;
+
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
@@ -10,7 +12,7 @@ import static java.time.Duration.ofSeconds;
 import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
-public class tapAndLogPress extends baseClass {
+public class tapAndLongPress extends baseClass {
 	public static void main(String arg[]) throws MalformedURLException, InterruptedException
 	{
 	AndroidDriver<AndroidElement> driver = capabilities();

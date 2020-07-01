@@ -1,3 +1,5 @@
+package appiumAutomation;
+
 import java.net.MalformedURLException;
 
 import io.appium.java_client.android.AndroidDriver;
