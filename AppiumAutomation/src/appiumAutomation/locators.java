@@ -9,11 +9,11 @@ import org.openqa.selenium.Capabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class locators extends baseClass
+public class locators extends hybridBaseClass
 {
 	public static void main(String arg[]) throws MalformedURLException
 	{
-		AndroidDriver<AndroidElement> driver = capabilities();
+		AndroidDriver<AndroidElement> driver = capabilities("real");
 		//xpath id className AndroidUIAutomator
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Preference']")).click();
