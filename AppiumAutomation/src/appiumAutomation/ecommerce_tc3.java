@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -14,11 +15,11 @@ public class ecommerce_tc3 extends baseClass{
 		AndroidDriver<AndroidElement> driver = capabilities();
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("hello");
-		driver.hideKeyboard(); //to hide the keboard
+		driver.hideKeyboard(); //to hide the keyboard
 		driver.findElement(By.xpath("//*[@text='Female']")).click();
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElementByAndroidUIAutomator("new UiScrollable(UiSelector()).scrollIntoView(text(\"Argentina\"));");
-//driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + containedText + "\").instance(0))"));     
+		//driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"" + containedText + "\").instance(0))"));     
 		driver.findElement(By.xpath("//*[@text='Argentina']")).click();
 		driver.findElementById("com.androidsample.generalstore:id/btnLetsShop").click();
 		System.out.println(driver.findElementsById("com.androidsample.generalstore:id/productName")); //2: it will not list all products count because all are not visible
@@ -42,6 +43,7 @@ public class ecommerce_tc3 extends baseClass{
 		String lastpageText=    driver.findElement(By.id("com.androidsample.generalstore:id/productName")).getText();
 
 		System.out.println("lastpageText is " + lastpageText);
+		Assert.assertTrue(lastpageText.equals("Jordan 6 Rings"));
 	}
 
 }
