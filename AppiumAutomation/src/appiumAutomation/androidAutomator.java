@@ -10,6 +10,5 @@ public class androidAutomator extends baseClass {
 		AndroidDriver<AndroidElement> driver = capabilities();
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 		System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size());
-
 	}
 }
