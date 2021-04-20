@@ -45,5 +45,4 @@ public class ecommerce_tc3 extends baseClass{
 		System.out.println("lastpageText is " + lastpageText);
 		Assert.assertTrue(lastpageText.equals("Jordan 6 Rings"));
 	}
-
 }
