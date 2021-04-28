@@ -25,7 +25,7 @@ public void apiDemoTest(String input) throws IOException, InterruptedException
 		AndroidDriver<AndroidElement> driver=capabilities("apiDemo");
      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
      
-  //xpath id className, androidUIautomator
+  //xpath id className, androidUIautomator.
      /*    xpath Syntax
       *    //tagName[@attribute='value']
     
