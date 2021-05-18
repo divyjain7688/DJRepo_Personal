@@ -1,1 +1,0 @@
-{"uuid":"50f6f8e3-15ff-452a-b947-10b7980842fb","name":"com.crm.qa.FreeCrmTest.setUp","description":"","start":1619940020526,"stop":1619940030475,"children":["5ee65c40-a755-4b8a-aab3-dda275736cc6"],"befores":[{"name":"setUp","stage":"finished","description":"","start":1619940020526,"stop":1619940030475}]}
