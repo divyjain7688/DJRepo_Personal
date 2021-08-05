@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 62.423 s <<< FAILURE! - in TestSuite
-orderHistory_VerifyFieldsOnTheOrderHistorySummaryPage(com.selenium.ebiz.order_history.grid_tests_orderHistory.VerifyFieldsOnTheOrderHistorySummaryPage_Grid)  Time elapsed: 0.755 s  <<< FAILURE!
-java.lang.IllegalArgumentException: wrong number of arguments
-

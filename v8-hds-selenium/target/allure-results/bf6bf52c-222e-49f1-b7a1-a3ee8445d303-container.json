@@ -1,1 +1,0 @@
-{"uuid":"bf6bf52c-222e-49f1-b7a1-a3ee8445d303","name":"com.selenium.ebiz.baseclass.BaseClassV8_ParallelGrid.getReport","description":"","start":1562945638944,"stop":1562945639457,"children":["6abf6d47-1a39-4be2-a58a-58a85eec8941"],"afters":[{"name":"getReport","status":"passed","stage":"finished","description":"","start":1562945638944,"stop":1562945639457}]}

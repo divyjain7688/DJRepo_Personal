@@ -22,7 +22,7 @@ public class VerifyAddingPartsFromSavedListAndPlaceorder extends BaseClassV8_Par
 
 		this.createDriver(browser, version, os, method.getName());
 		WebDriver driver = this.getWebDriver();
-		PageManager pageManager = new PageManager(driver);
+		PageManager pageManager = new PageManager(driver); 
 
 		pageManager.commonLogin().LoginToHDS(RandomAccountSelect.users.pop(), configread.getPassword());
 		pageManager.shoppingCartPage().checkClearShoppingCart();
