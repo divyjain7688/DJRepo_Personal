@@ -15,8 +15,7 @@ public class BookFlightPage {
 	By BusinessClassRadioButton = By.xpath("//input[@value=\"Business\"]");
 	By FirstClassRadioButton = By.xpath("//input[@value=\"First\"]");
 	By ContinueButton = By.xpath("//input[@name=\"findFlights\"]");
-	By NoSeatsAvailableText = By
-			.xpath("//p[@align=\"left\"]/font[@face=\"Arial, Helvetica, sans-serif\"]/b/font[@size=\"4\"]");
+	By NoSeatsAvailableText = By.xpath("//p[@align=\"left\"]/font[@face=\"Arial, Helvetica, sans-serif\"]/b/font[@size=\"4\"]");
 	By BackToHomeText = By.xpath("//font[contains(text(),\"BACK TO HOME\")]");
 	By RoundTripRadioButton = By.xpath("//input[@value=\"roundtrip\"]");
 	By OnewayTripRadioButton = By.xpath("//input[@value=\"oneway\"]");

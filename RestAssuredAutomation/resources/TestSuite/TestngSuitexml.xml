@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Api Test Suite">
+	<test name="Api Test">
+		<classes>
+      <class name="udemyApiTest.LibraryApi"/>
+				<!-- <methods>
+					<include name="ebizLoginLogoutTest" />
+					<include name="ebizLogoutTest" />
+				</methods> -->
+			</class>
+		</classes>
+	</test>
+</suite>
