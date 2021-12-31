@@ -5,7 +5,6 @@ public class payLoad {
 	//you can call any method from class to your testcase by giving classname.method name if that method name is defined as static
 	public static String getPostData()
 	{
-	
 		String b ="{"+
 				  "\"location\": {"+
 				    "\"lat\": -33.8669710,"+
