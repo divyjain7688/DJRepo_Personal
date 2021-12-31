@@ -20,7 +20,6 @@ public class payLoad {
 				  "\"language\": \"en-AU\""+
 				"}";
 		
-		
 		return b;
 	}
 	public static String createPlaceData()
