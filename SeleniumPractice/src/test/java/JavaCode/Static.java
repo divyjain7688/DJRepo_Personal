@@ -1,11 +1,10 @@
 package JavaCode;
-/*package Basics;
 
 public class Static {
 
 	int rollno;  
 	   String name;  
-	   static String college="ASDF";  
+	   static String college="";  
 	   static void change()
 	   {
 		   college =  "LNCT";
@@ -22,16 +21,14 @@ public class Static {
 	   {
 		   Static s1= new Static(123,"divy");
 		   Static s2= new Static(234,"aaru");
-	//	  change();
+		  change();
 		   s1.display();
 		   s2.display();
 	   }
 }
 
 
-123 divy DAVV
-234 aaru DAVV
-*/
+
 
 /*public class Static
 {

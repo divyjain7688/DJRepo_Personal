@@ -20,7 +20,7 @@ public class collectioncode {
 			System.out.println(i+" "+ hashmap.get(i));
 		}
 		System.out.println("entryset");
-		Iterator itr = hashmap.entrySet().iterator();
+		Iterator<?> itr = hashmap.entrySet().iterator();
 		while(itr.hasNext())
 		{
 			Map.Entry obj=(Entry) itr.next();

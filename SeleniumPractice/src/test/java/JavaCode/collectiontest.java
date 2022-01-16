@@ -9,7 +9,7 @@ public class collectiontest {
 	public static void main(String arg[])
 	{
 			
-	/*	//filter duplicate value and print 
+		//filter duplicate value and print 
 		List<String> full = new ArrayList<String>();
 		full.add("test");
 		full.add("testing");
@@ -27,11 +27,7 @@ public class collectiontest {
 				duplicates.add(f);
 			}
 		}
-		System.out.println("dup are" + duplicates);*/
-
-		 
-
-		
+		System.out.println("dup are" + duplicates);	
 		
 		
 		/*//	sort strings in array
@@ -124,15 +120,15 @@ public class collectiontest {
 		
 		
 		
-		/*// uneven spaces between words
-		String blogName = "how to   do    in  java   .         com";
-		String nameWithProperSpacing = blogName.replaceAll("\\s+", " ");
-		System.out.println( nameWithProperSpacing );
-		
-		String name = "how to   do    in  java   .         com";
-		String nameWitouthProperSpacing = blogName.replaceAll("( )+", " ");
-		System.out.println( nameWitouthProperSpacing );*/
-		
+		/*// uneven spaces between words*/
+//		String blogName = "how to   do    in  java   .         com";
+//		String nameWithProperSpacing = blogName.replaceAll("\\s+", " ");
+//		System.out.println( nameWithProperSpacing );
+//		
+//		String name = "how to   do    in  java   .         com";
+//		nameWithProperSpacing = name.replaceAll("( )+", " ");
+//		System.out.println( nameWithProperSpacing );
+//		
 		
 		
 		

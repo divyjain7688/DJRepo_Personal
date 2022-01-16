@@ -189,10 +189,9 @@ public class methodoverridingprogram {
 
 
 
-/*package javalearning;
 
 
-class parent{
+/*class parent{
 	public void display()
 	{
 		System.out.println("parent");		
@@ -219,6 +218,7 @@ class methodoverridingprogram extends child1 {
 	
 }
 }
+
 child1
 child1
 child1*/

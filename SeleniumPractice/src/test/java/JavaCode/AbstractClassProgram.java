@@ -1,7 +1,7 @@
 package JavaCode;
 
-/*
-abstract class parent{
+
+/*abstract class parent{
 parent()
 {
 	System.out.println("parent constructor");
@@ -52,20 +52,7 @@ parents are running*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-abstract class parent{
+/*abstract class parent{
 parent()
 {
 	System.out.println("parent constructor");
@@ -132,18 +119,7 @@ parents are running*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-package javalearning;
+/*package javalearning;
 
 
 abstract class parent{

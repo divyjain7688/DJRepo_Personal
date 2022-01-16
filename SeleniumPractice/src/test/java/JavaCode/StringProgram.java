@@ -7,18 +7,12 @@ public class StringProgram {
 
 	public static void main(String arg[])
 	{
-		/*String s = "Divy";
+		String s = "Divy";
+		System.out.println("substring is " +s.substring(1,2));
 		s.concat("jain");
 		System.out.println(s);
 		s=s.concat("jain2");
 		System.out.println(s);
-		
-		String s2= new String("jasssi");
-		System.out.println(s2);
-		s2.concat("salil");
-		System.out.println(s2);
-		s2=s2.concat("mallicak");
-		System.out.println(s2);
 		
 		
 		String s3 = new String("DJ");
@@ -44,7 +38,7 @@ public class StringProgram {
 		System.out.println(d);		
 		System.out.println(e);
 		String e1 = (a.concat(b)).concat(c);
-		System.out.println(e1);*/
+		System.out.println(e1);
 		
 		 String Test1 = "ABC";
 String Test2= "ABC";

@@ -28,31 +28,28 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 
 
 
-
-
-/*package Basics;
-class parent{
-	void run()
-	{
-		System.out.println("parent running");
-	};
-}
-
-class child extends parent{
-	void run()
-	{
-		System.out.println("child running");
-	};
-}
-
-public class Final {
-	public static void main(String arg[])
-	{
-	parent p = new child();
-p.run();
-	}
-}
-child running*/
+//class parent{
+//	void run()
+//	{
+//		System.out.println("parent running");
+//	};
+//}
+//
+//class child extends parent{
+//	void run()
+//	{
+//		System.out.println("child running");
+//	};
+//}
+//
+//public class Final {
+//	public static void main(String arg[])
+//	{
+//	parent p = new child();
+//p.run();
+//	}
+//}
+/*child running*/
 
 
 
@@ -125,32 +122,35 @@ Caused by: java.lang.VerifyError: class Basics.child overrides final method Basi
 
 
 
-/*
 
-package Basics;
-final class parent{
-	final void run()
-	{
-		System.out.println("parent running");
-	};
-}
+//class parent{
+//	final void run()
+//	{
+//		System.out.println("parent running");
+//	};
+//	void jog()
+//	{
+//		System.out.println("parent running");
+//	};
+//}
+//
+//class child extends parent{
+//	void jog()
+//	{
+//		System.out.println("child running");
+//	};
+//}
+//
+//public class Final {
+//	public static void main(String arg[])
+//	{
+//		parent p= new child();
+//		p.run();
+//		p.jog();
+//		}
+//}
 
-class child extends parent{
-	void jog()
-	{
-		System.out.println("child running");
-	};
-}
 
-public class Final {
-	public static void main(String arg[])
-	{
-	child c = new child();
-c.jog();
-}
-}
-compilation error
-*/
 
 
 

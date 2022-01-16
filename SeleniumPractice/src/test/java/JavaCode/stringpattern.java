@@ -14,16 +14,18 @@ public class stringpattern {
 		{
 			for(int j=0;j<=i;j++)
 			{
-				if(j==0)
-				{
-					chars[i]=Character.toUpperCase(chars[i]);
-					sb.append(chars[i]);
-				}
-				else
-				{
-					chars[i]=Character.toLowerCase(chars[i]);
-					sb.append(chars[i]);
-				}
+				sb.append(chars[i]);
+
+//				if(j==0)
+//				{
+//					chars[i]=Character.toUpperCase(chars[i]);
+//					sb.append(chars[i]);
+//				}
+//				else
+//				{
+//					chars[i]=Character.toLowerCase(chars[i]);
+//					sb.append(chars[i]);
+//				}
 			}
 			sb.append("-");
 		}

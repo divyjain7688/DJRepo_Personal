@@ -1,7 +1,7 @@
 package JavaCode;
 import java.util.HashMap;
 
-/*public class CountOfEachWordUsingMap {
+public class CountOfEachWordUsingMap {
 	public static void main(String arg[])
 	{
 		String str = "This this is is done by Saket Saket";
@@ -24,9 +24,13 @@ import java.util.HashMap;
 		}
 		System.out.println("map is"+ map);
 
-
+		for(String s :map.keySet())
+		{
+			System.out.println(s +" appears " + map.get(s));
+		}
 	}
 }
+/*
 words.length is 8
 map is{Saket=2, by=1, this=1, This=1, is=2, done=1}
 */

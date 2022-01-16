@@ -1,5 +1,5 @@
 package JavaCode;
-/*package javalearning;
+/*
 class parent{
 	int a = 10;
 parent()
@@ -52,14 +52,6 @@ parent method
 child method
 
 */
-
-
-
-
-
-
-
-
 
 
 

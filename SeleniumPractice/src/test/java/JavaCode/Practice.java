@@ -1,7 +1,7 @@
 package JavaCode;
 
 public class Practice {
-	
+
 	static int s;
 	static {
 		s=s+1;
@@ -13,7 +13,7 @@ public class Practice {
 		System.out.println("value of s is "+ s);
 
 	}
-	
+
 
 	public static void main(String arg[])
 	{
@@ -43,7 +43,7 @@ public class Practice {
 		System.out.println(min);  
 
 
-change();
+		change();
 
 
 		aa:  
@@ -58,9 +58,9 @@ change();
 					}  
 			}  
 
-		
-	
-		
+
+
+
 
 	}
 

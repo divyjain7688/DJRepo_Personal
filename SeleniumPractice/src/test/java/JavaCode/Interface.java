@@ -1,4 +1,4 @@
-/*package JavaCode;
+ /* package JavaCode;
 
 interface Printable{  
 void print();  
@@ -35,15 +35,16 @@ public class Interface {
 		s.print();
 		s.show();
 		s.Defprint();
+		s.Defshow();
 		
 		
 	}
 
 }
 
-print
-child Defprint
-print
-show
-child Defprint
-*/
+//print
+//child Defprint
+//print
+//show
+//child Defprint
+ */ 

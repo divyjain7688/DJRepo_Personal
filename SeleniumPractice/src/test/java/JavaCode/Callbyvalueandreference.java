@@ -8,7 +8,7 @@ public class Callbyvalueandreference {
 //	data=data+100;//changes will be in the local variable only  
 	 this.data=data;
 
-	 System.out.println("data value inside function" + data);
+	 System.out.println("data value inside function " + data);
 	 }  
 	     
 	 public static void main(String args[]){  

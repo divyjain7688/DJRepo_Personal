@@ -39,38 +39,32 @@ public class methodoverloadingprogram {
 
 
 
-/*package javalearning;
 
-public class methodoverloadingprogram {
-	
+/*public class methodoverloadingprogram {
+
 	static int add(int a, int b)
 	{ int c = a=b;
+	return c;
+	}
+
+	static int add(double a, double b)
+	{
+		int c= (int) (a+b);
 		return c;
 	}
 
-	static double add(double a, double b)
-	{
-		double c= a+b;
-	return c;
-	}
-	
 	public static void main(String[] arg)
 	{
 		int add1 = methodoverloadingprogram.add(2, 3);
 		System.out.println(add1);
 		double add2 = methodoverloadingprogram.add(2.0, 4.3);
 		System.out.println(add2);
-		
+
 	}
-	
-	}
-3
-6.3
-*/
 
-
-
-
+}
+//3
+//6.3 */
 
 
 
@@ -196,11 +190,9 @@ addition is 15
 
 
 
-/*
 
-package javalearning;
 
-public class methodoverloadingprogram {
+/*public class methodoverloadingprogram {
 	
 	static void add(int  a, long b)
 	{ 
@@ -221,6 +213,7 @@ public class methodoverloadingprogram {
 	}
 	
 	}
+/*
 
 Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
 	The method add(int, long) is ambiguous for the type methodoverloadingprogram

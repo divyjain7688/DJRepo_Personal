@@ -9,8 +9,8 @@ public class intToWord {
 	{
 
 		int i = 43267;
-		intToWord iw = new intToWord();
 		char[] digits = Integer.toString(i).toCharArray();
+		intToWord iw = new intToWord();
 		for(int j=0;j<digits.length;j++)
 		{
 			iw.displayeWordValue(digits[j]);

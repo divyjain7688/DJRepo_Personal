@@ -2,13 +2,13 @@ package JavaCode;
 
 interface one{
 	
-	//void a();
-	//void b();
+	void a();
+	void b();
 }
 
 interface two{
 	
-	//void c();
+	void c();
 	void b();
 }
 
@@ -36,6 +36,7 @@ public class interfaceprogram implements one,two{
 		one o = new interfaceprogram();
 		two t = new interfaceprogram();
 		t.b();
-		
+		interfaceprogram i = new interfaceprogram();
+		i.c();
 	}
 }

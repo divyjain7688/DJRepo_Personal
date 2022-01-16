@@ -4,12 +4,10 @@ import java.util.ArrayList;
 public class uniqueInArray {
 	public static void main(String arg[])
 	{
-
 		int a[] = {1,2,3,2,4,3,5,4,6,5};
 		ArrayList<Integer> l= new ArrayList<Integer>();
 		for(int i=0;i<a.length-1;i++)
 		{
-
 			int c=0;
 			if(!l.contains(a[i]))
 			{	
@@ -29,12 +27,8 @@ public class uniqueInArray {
 				else
 				{
 					System.out.println("number  " +a[i] + " occured " + c+" times");
-
 				}
 			}
-
 		}
-
 	}
-
 }

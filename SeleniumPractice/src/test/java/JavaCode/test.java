@@ -1,5 +1,5 @@
 package JavaCode;
-/*import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class test {
@@ -19,8 +19,8 @@ public static void main(String arg[])
 	str=str.replace(" +", " ");
 	System.out.println("str is "+ str);
 	}
-*/
 
+}
 
 	       /* int i = 20;
 	        List<> iList = new ArrayList<>();
