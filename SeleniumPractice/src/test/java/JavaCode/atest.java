@@ -2,6 +2,7 @@ package JavaCode;
 
 
  public class atest{  
+	 int q=10;
 	   static void validate(int age){  
 //	     if(age<18)  
 //	      throw new NullPointerException("not valid");  
@@ -35,7 +36,7 @@ package JavaCode;
 		  }
 		  System.out.println(intArray);
 		  
-		  
+		//  System.out.println(q);
 		  }
 	   }
 	

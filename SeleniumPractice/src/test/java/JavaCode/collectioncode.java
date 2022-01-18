@@ -20,13 +20,19 @@ public class collectioncode {
 			System.out.println(i+" "+ hashmap.get(i));
 		}
 		System.out.println("entryset");
-		Iterator<?> itr = hashmap.entrySet().iterator();
-		while(itr.hasNext())
+		for(Map.Entry entry: hashmap.entrySet() )
 		{
-			Map.Entry obj=(Entry) itr.next();
-			System.out.println(obj.getKey());
-			System.out.println(obj.getValue());
+			System.out.println(entry.getKey());
+			System.out.println(entry.getValue());
+
 		}
+//		Iterator<?> itr = hashmap.entrySet().iterator();
+//		while(itr.hasNext())
+//		{
+//			Map.Entry obj=(Entry) itr.next();
+//			System.out.println(obj.getKey());
+//			System.out.println(obj.getValue());
+//		}
 	}
 
 }
