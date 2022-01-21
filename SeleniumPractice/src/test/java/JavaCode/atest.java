@@ -37,6 +37,12 @@ package JavaCode;
 		  System.out.println(intArray);
 		  
 		//  System.out.println(q);
+		  
+		  String dj = "test";
+		  String dj1 = "test";
+		  System.out.println("dj "+ dj +" and dj1 "+ dj1);
+		  dj.concat("qa");
+		  System.out.println("dj "+ dj +" and dj1 "+ dj1);
 		  }
 	   }
 	
