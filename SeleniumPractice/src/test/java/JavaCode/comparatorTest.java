@@ -12,7 +12,7 @@ public class comparatorTest{
 		this.name=name;
 	}
 	
-	
+
 class sortbyname implements   Comparator<comparatorTest>{
 public int compare(comparatorTest c1, comparatorTest c2)
 {
