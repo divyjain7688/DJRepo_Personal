@@ -1,10 +1,7 @@
 package udemyApiResource;
 
 import static io.restassured.RestAssured.given;
-
-import java.util.Properties;
 import java.util.Random;
-
 import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;
 import io.restassured.path.json.JsonPath;

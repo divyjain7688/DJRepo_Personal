@@ -3,10 +3,10 @@ package udemyApiTest;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
+import java.nio.charset.StandardCharsets;
+import org.apache.commons.io.FileUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -79,8 +79,11 @@ public class LibraryApi {
 	
 	public static String GenerateStringFromResource(String path) throws IOException
 	{
-		return new String(Files.readAllBytes(Paths.get(path)));
-
+		//one way - return new String(Files.readAllBytes(Paths.get(path)));
+	    //second way using commonui jar file method
+		String jsonContent = FileUtils.readFileToString(new File(path),
+			                StandardCharsets.UTF_8);
+	    return jsonContent;
 	}
 
 	

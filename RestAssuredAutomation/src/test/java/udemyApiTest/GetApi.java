@@ -43,7 +43,7 @@ public class GetApi {
 		param("key","AIzaSyBacM-BRdil_wJ2D4RMapmft8p4kufctDk").
 		when().
 		get("/maps/api/place/nearbysearch/json").
-		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().contentType(ContentType.JSON).and().
+		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().and().
 		body("results[0].name", equalTo("Sydney")).and().header("Server", "scaffolding on HTTPServer2").and().
 		header("Content-Type", "application/json; charset=UTF-8").and().extract().response();
 		String response = res.asString();
