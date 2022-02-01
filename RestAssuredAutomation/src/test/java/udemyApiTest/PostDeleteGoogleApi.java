@@ -1,17 +1,24 @@
 package udemyApiTest;
+import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
+import static org.hamcrest.Matchers.equalTo;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Map;
+import java.util.Properties;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import io.restassured.RestAssured;
+import io.restassured.common.mapper.TypeRef;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import udemyApiResource.*;
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
+import udemyApiResource.payload;
+import udemyApiResource.resource;
 public class PostDeleteGoogleApi {
 	Properties prop = new Properties();
 
@@ -23,7 +30,7 @@ public class PostDeleteGoogleApi {
 	}
 
 	@Test(invocationCount=1,enabled=true)
-	public void postAndDeleteGooglePlace()
+	public void postAndDeleteGooglePlace() throws JsonParseException, JsonMappingException, IOException
 	{
 		RestAssured.baseURI=prop.getProperty("HOST");
 
@@ -42,7 +49,7 @@ public class PostDeleteGoogleApi {
 		JsonPath js = new JsonPath(stringResponse);
 		String placeId = js.get("place_id");
 		System.out.println("place id is "+ placeId);
-
+		
 		//GET call with place Id
 		Response getResponse = given()/*.log().all()*/
 				.queryParam("key", prop.getProperty("KEY"))
@@ -52,10 +59,25 @@ public class PostDeleteGoogleApi {
 				.get(resource.placeGetResource())
 				.then().assertThat().statusCode(200)
 				.extract().response();
+		
+		System.out.println("Sting response for GET is " + getResponse);
+		//schema validation using json-schema-validator
+		getResponse.then().assertThat().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\libraby.json")));
+				 
 		JsonPath jsGet = new JsonPath(getResponse.asString());
 		String actualAddress = jsGet.getString("address");
 		System.out.println("actual Address is "+ actualAddress );
 
+		//strore json response in hashmap and verify
+		Map<String,Object> responseInMap  =  given()/*.log().all()*/
+				.queryParam("key", prop.getProperty("KEY"))
+				.header("Content-Type","application/json")	//not required for get request
+				.queryParam("place_id", placeId)
+				.when()
+				.get(resource.placeGetResource()).as(new TypeRef<Map<String,Object>>(){});
+		Assert.assertEquals((String)responseInMap.get("name"),"Google Shoes!");
+		
+		
 		//Delete call with place Id
 		Response delResponse=given().
 				queryParam("key",prop.getProperty("KEY")).
@@ -82,6 +104,7 @@ public class PostDeleteGoogleApi {
 				.extract().response();
 		jsGet = new JsonPath(getResponse.asString());
 		actualAddress = jsGet.getString("address");
+
 		System.out.println("actual Address is "+ actualAddress );
 		
 
