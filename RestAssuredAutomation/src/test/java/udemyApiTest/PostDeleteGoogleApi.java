@@ -68,7 +68,7 @@ public class PostDeleteGoogleApi {
 		String actualAddress = jsGet.getString("address");
 		System.out.println("actual Address is "+ actualAddress );
 
-		//strore json response in hashmap and verify
+		//store json response in hashmap using jackson and verify
 		Map<String,Object> responseInMap  =  given()/*.log().all()*/
 				.queryParam("key", prop.getProperty("KEY"))
 				.header("Content-Type","application/json")	//not required for get request
