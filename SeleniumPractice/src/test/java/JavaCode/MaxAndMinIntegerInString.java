@@ -14,6 +14,7 @@ class MaxAndMinIntegerInString {
         	intNumbers[i] = Integer.parseInt(nums[i]);
         }
         
+        
         for(int i=0; i<intNumbers.length; i++)
         {
         	if(intNumbers[i]>max)
