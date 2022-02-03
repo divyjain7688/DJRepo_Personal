@@ -1,5 +1,6 @@
 package javaCode;
 import java.util.HashMap;
+import java.util.Map;
 
 class FirstNonRepeatingFirstChar {
 	public static String firstNonRepeatingLetter(String str) {
@@ -19,9 +20,8 @@ class FirstNonRepeatingFirstChar {
 
 		}
 		
-		for (int i = 0; i < str.length(); i++) 
+		for (char c : map.keySet()) 
 		{
-			char c = Character.toLowerCase(str.charAt(i));
 			if (map.get(c)==1) 
 			{
 				text=  String.valueOf(c);
@@ -35,13 +35,29 @@ class FirstNonRepeatingFirstChar {
 			
 		}
 		
+//		for (int i = 0; i < str.length(); i++) 
+//		{
+//			char c = Character.toLowerCase(str.charAt(i));
+//			if (map.get(c)==1) 
+//			{
+//				text=  String.valueOf(c);
+//				break;
+//			} 
+//			if (map.get(c)==str.length()) 
+//			{
+//				text= "all same";
+//				break;
+//			} 
+//			
+//		}
+		
 		return text;
 
 	}
 	
 	public static void main(String arg[])
 	{
-		String npc = firstNonRepeatingLetter("");
+		String npc = firstNonRepeatingLetter("rrRtrr");
 		System.out.println(npc);
 	}
 

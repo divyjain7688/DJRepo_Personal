@@ -11,11 +11,19 @@ import org.testng.annotations.AfterTest;
 
 public class priority {
 
-	  @Test(priority=0, dependsOnMethods="B")
+	  @Test(priority=-5, dependsOnMethods="B")
 	  public void A() {
 		  System.out.println("A called");
 
 	  }
+	  
+	  @Test(priority=-5)
+	  public void D() {
+		  System.out.println("D called");
+
+	  }
+	  
+	  
 	  @Test(priority=0)
 	  public void B() {
 		  System.out.println("B called");

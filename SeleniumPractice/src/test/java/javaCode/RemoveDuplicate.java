@@ -2,7 +2,9 @@ package javaCode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RemoveDuplicate {
 
@@ -14,8 +16,11 @@ public class RemoveDuplicate {
 		System.out.println(r.removeDup("abcfc"));
 		
 		r.removeDupInt(i);
+		
+		r.FilterDuplicate();
 	}
 
+	//remove dup from string
 	public String removeDup(String str) {
 		String strNoDup = "";
 
@@ -29,6 +34,7 @@ public class RemoveDuplicate {
 		return strNoDup;
 	} 
 	
+	//remove dup int from int array
 	public void removeDupInt(int[]  a)
 	{
 		Arrays.sort(a);
@@ -43,7 +49,31 @@ public class RemoveDuplicate {
 		}
 		System.out.println("noDup are "+ noDup.toString() );
 		
-
-		
 	} 
+	
+
+	
+	//filter duplicate value and print 
+	public void FilterDuplicate()
+	{
+	List<String> full = new ArrayList<String>();
+	full.add("test");
+	full.add("testing");
+	full.add("test");
+	full.add("testLnt");
+	full.add("test");
+
+	Set<String> duplicates = new HashSet<String>();
+
+	Set<String> temp = new HashSet<String>();
+	for(String f : full)
+	{
+		if(temp.add(f)==false)
+		{
+			duplicates.add(f);
+		}
+	}
+	System.out.println("dup are" + duplicates);	
+	}
+
 }

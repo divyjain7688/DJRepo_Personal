@@ -1,7 +1,7 @@
 package javaCode;
 
 
-public class Hello {
+public class HelloSwitch {
 
 	public static void main(String arg[])
 	{
