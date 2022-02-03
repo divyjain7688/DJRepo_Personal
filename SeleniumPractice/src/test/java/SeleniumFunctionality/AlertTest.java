@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
-public class alert {
+public class AlertTest {
 	public static void main(String arg[])
 	{
 		String baseurl ="http://demo.guru99.com/test/delete_customer.php";

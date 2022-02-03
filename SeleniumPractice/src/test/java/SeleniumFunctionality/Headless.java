@@ -7,7 +7,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.annotations.Test;
 
-public class headless {
+public class Headless {
 	
 	@Test
 	public void htmlUnitDriverTest()
