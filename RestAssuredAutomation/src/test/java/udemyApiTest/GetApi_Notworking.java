@@ -9,14 +9,14 @@ import static org.hamcrest.Matchers.equalTo;
 import io.restassured.response.Response;
 import udemyApiResource.ReusableMethods;
 
-public class GetApi {
+public class GetApi_Notworking {
 
 	@Test
 	public void getFirstGooglePlaceId()
 	{
 		RestAssured.baseURI="https://maps.googleapis.com";
-		Response res = given().
-		param("location","-33.8670522,151.1957362").
+		Response res = given().log().all().
+		queryParam("location","-33.8670522,151.1957362").
 		param("radius","500").
 		param("key","AIzaSyBacM-BRdil_wJ2D4RMapmft8p4kufctDk").
 		when().

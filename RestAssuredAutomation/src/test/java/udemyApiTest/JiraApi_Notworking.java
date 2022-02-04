@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 import udemyApiResource.ReusableMethods;
 import udemyApiResource.payload;
 
-public class JiraApi {
+public class JiraApi_Notworking {
 
 	Properties prop = new Properties();
 	@BeforeClass

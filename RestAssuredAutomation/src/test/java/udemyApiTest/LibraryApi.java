@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.equalTo;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -28,18 +29,19 @@ public class LibraryApi {
 		post("/Library/Addbook.php").
 		then().assertThat().statusCode(200).extract().response();
 		String strResponse= res.asString();
+		System.out.println("create lib response is "+ strResponse);
 		JsonPath j = new JsonPath(strResponse);
 		System.out.println("created ID is "+ j.get("ID"));
 		String Id = j.get("ID");
 		
-		given().
+		Response delRes = given().
 		header("Content-Type","application/json").
 		body(payload.deleteBook(Id)).
 		when().
 		post("/Library/DeleteBook.php").
 		then().assertThat().statusCode(200).and()./*body("Msg", equalTo("successfully added")).*/
 		extract().response();
-		String strDelResponse= res.asString();
+		String strDelResponse= delRes.asString();
 		System.out.println("strDelResponse is "+ strDelResponse);		
 	}
 	
@@ -66,14 +68,14 @@ public class LibraryApi {
 		System.out.println("created ID is "+ j.get("ID"));
 		String Id = j.get("ID");
 		
-		given().
+		Response delRes = given().
 		header("Content-Type","application/json").
 		body(payload.deleteBook(Id)).
 		when().
 		post("/Library/DeleteBook.php").
 		then().assertThat().statusCode(200).and()./*body("Msg", equalTo("successfully added")).*/
 		extract().response();
-		String strDelResponse= res.asString();
+		String strDelResponse= delRes.asString();
 		System.out.println("strDelResponse is "+ strDelResponse);		
 	}
 	

@@ -60,21 +60,27 @@ public class PostDeleteGoogleApi {
 				.then().assertThat().statusCode(200)
 				.extract().response();
 		
-		System.out.println("Sting response for GET is " + getResponse);
-		//schema validation using json-schema-validator
-		getResponse.then().assertThat().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\libraby.json")));
-				 
+		System.out.println("Sting response for GET is " + getResponse.asPrettyString());
+		
 		JsonPath jsGet = new JsonPath(getResponse.asString());
 		String actualAddress = jsGet.getString("address");
 		System.out.println("actual Address is "+ actualAddress );
 
-		//store json response in hashmap using jackson and verify
+		//IMP : schema validation using json-schema-validator
+		getResponse.then().assertThat().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\libraby.json")));
+				 
+		//IMP : store json response in hashmap using jackson and verify
 		Map<String,Object> responseInMap  =  given()/*.log().all()*/
 				.queryParam("key", prop.getProperty("KEY"))
 				.header("Content-Type","application/json")	//not required for get request
 				.queryParam("place_id", placeId)
 				.when()
 				.get(resource.placeGetResource()).as(new TypeRef<Map<String,Object>>(){});
+		System.out.println("hasmap values are :");
+		for(Map.Entry s : responseInMap.entrySet())
+		{
+			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
+		}
 		Assert.assertEquals((String)responseInMap.get("name"),"Google Shoes!");
 		
 		
