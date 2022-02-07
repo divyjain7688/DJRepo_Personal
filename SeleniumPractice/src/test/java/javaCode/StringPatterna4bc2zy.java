@@ -1,6 +1,6 @@
 package javaCode;
 
-public class StringManipulate {
+public class StringPatterna4bc2zy {
 	/*
 	 * Input: a4bc2zy 
 	 * Ouput: aaaabcbczy
@@ -8,8 +8,8 @@ public class StringManipulate {
 
 	public static void main(String arg[])
 	{
-		String str = "a4bc@2zy";
-		StringManipulate sm = new StringManipulate();
+		String str = "a4bc2zy";
+		StringPatterna4bc2zy sm = new StringPatterna4bc2zy();
 		sm.stringUpdate(str);
 	}
 	

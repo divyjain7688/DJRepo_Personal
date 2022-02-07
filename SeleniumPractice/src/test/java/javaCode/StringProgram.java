@@ -2,7 +2,7 @@ package javaCode;
 
 
 public class StringProgram {
-	
+
 	private static final int String = 0;
 
 	public static void main(String arg[])
@@ -13,23 +13,23 @@ public class StringProgram {
 		System.out.println(s);
 		s=s.concat("jain2");
 		System.out.println(s);
-		
-		
+
+
 		String s3 = new String("DJ");
 		String s4 = new String("DJ");
 		System.out.println(s3.equals(s4));
 		System.out.println(s3==s4);
-		
-		
+
+
 		String s5="India";
 		String s6="India";
-		
+
 		System.out.println(s5.equals(s6));
 		System.out.println(s5==s6);
-		
-		
-		
-		
+
+
+
+
 		String a = "India";
 		String b = "is";
 		String c = "independant";
@@ -39,11 +39,24 @@ public class StringProgram {
 		System.out.println(e);
 		String e1 = (a.concat(b)).concat(c);
 		System.out.println(e1);
+
+		String Test1 = "ABC";
+		String Test2= "ABC";
+		Test1.contains(Test2);
 		
-		 String Test1 = "ABC";
-String Test2= "ABC";
-Test1.contains(Test2);
 		
+		
+		String str = "  India   will      win  the wc 2019 ;";
+		System.out.println("str is "+ str);
+		
+		str=str.replace("( )+", " ");
+		System.out.println("str is "+ str);
+		System.out.println("float  "+ .1+.2+.3);
+		System.out.println("float  "+ .1+.2+.3+3);
+		System.out.println( .1+.2);
+		System.out.println( .1+.2+4);
+
+
 	}
 
 }
