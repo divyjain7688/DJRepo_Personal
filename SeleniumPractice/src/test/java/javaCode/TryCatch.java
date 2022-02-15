@@ -41,7 +41,7 @@ public class TryCatch {
 		}
 		finally
 		{
-		//	return true;
+			return true;
 		}
 		
 	}

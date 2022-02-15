@@ -69,6 +69,8 @@ public class ComplexJsonParse {
 		
 	}
 	
+	
+	//Object will stro all type of value.Convert it to string to print it
 	@Test
 	public void dataTypeResponse()
 	{
