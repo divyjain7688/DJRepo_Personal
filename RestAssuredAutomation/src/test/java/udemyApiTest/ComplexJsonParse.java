@@ -1,7 +1,9 @@
 package udemyApiTest;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
+import java.io.File;
 import java.util.Map;
 
 import org.testng.Assert;
@@ -78,6 +80,9 @@ public class ComplexJsonParse {
 		Response response = given().header("Content-Type","application/json")
 		.when().
 		get("/maps/api/place/nearbysearch/json");
+		
+		response.then().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\mockTest.json")));
+		 
 		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
 		System.out.println("hasmap values are :");
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
