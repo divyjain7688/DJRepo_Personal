@@ -1,9 +1,16 @@
 package udemyApiTest;
 
+import static io.restassured.RestAssured.given;
+
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.RestAssured;
+import io.restassured.common.mapper.TypeRef;
 import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import udemyApiResource.ReusableMethods;
 import udemyApiResource.payload;
 
@@ -59,6 +66,22 @@ public class ComplexJsonParse {
 			
 		}
 		Assert.assertEquals(calcPurchaseAmount,expectedPurchaseAmount );
+		
+	}
+	
+	@Test
+	public void dataTypeResponse()
+	{
+		RestAssured.baseURI="https://run.mocky.io/v3/adffbe1f-5203-4411-8b3c-83f4d92f8a87";	//https://designer.mocky.io/design/confirmation
+		Response response = given().header("Content-Type","application/json")
+		.when().
+		get("/maps/api/place/nearbysearch/json");
+		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
+		System.out.println("hasmap values are :");
+		for(Map.Entry<String,Object> s : responseInMap.entrySet())
+		{
+			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
+		}
 		
 	}
 

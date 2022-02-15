@@ -77,7 +77,7 @@ public class PostDeleteGoogleApi {
 				.when()
 				.get(resource.placeGetResource()).as(new TypeRef<Map<String,Object>>(){});
 		System.out.println("hasmap values are :");
-		for(Map.Entry s : responseInMap.entrySet())
+		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{
 			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
 		}

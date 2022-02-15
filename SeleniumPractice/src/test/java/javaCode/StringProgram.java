@@ -12,7 +12,8 @@ public class StringProgram {
 		s.concat("jain");
 		System.out.println(s);
 		s=s.concat("jain2");
-		System.out.println(s);
+		System.out.println("string is " +s);
+		System.out.println("start with "+ s.startsWith("s"));
 
 
 		String s3 = new String("DJ");
@@ -57,6 +58,9 @@ public class StringProgram {
 		System.out.println( .1+.2+4);
 
 
+		String ss = "#t%6Y";
+		ss = ss.replaceAll("[^a-zA-Z]", "");
+		System.out.println("ss is "+ ss);
 	}
 
 }

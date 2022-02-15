@@ -28,7 +28,7 @@ public class payload {
 
 		return s;
 	}
-	
+
 	public static String complexBookPayload()
 	{
 		String s = "{\r\n" + 
@@ -128,5 +128,14 @@ public class payload {
 	{
 		String payload = "{\r\n \r\n\"ID\" : \""+id+ "\"\r\n \r\n}\r\n";
 		return payload;
+	}
+
+	public static String testResponse()
+	{
+		return
+				"{\r\n"
+				+ "\"name\" : \"Divy\",\r\n"
+				+ "\"age\" : 34\r\n"
+				+ "}";
 	}
 }
