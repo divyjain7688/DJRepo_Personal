@@ -22,7 +22,7 @@ public class OAuth2validation {
 		driver.findElement(By.cssSelector("[type='email']")).sendKeys("divy.0871@gmail.com");
 		driver.findElement(By.cssSelector("[type='email']")).sendKeys(Keys.ENTER);
 		Thread.sleep(4000);
-		driver.findElement(By.cssSelector("[type='password']")).sendKeys("Djdestiny&7");
+		driver.findElement(By.cssSelector("[type='password']")).sendKeys("ashdg");
 		driver.findElement(By.cssSelector("[type='password']")).sendKeys(Keys.ENTER);
 		Thread.sleep(8000);
 		String url=driver.getCurrentUrl();

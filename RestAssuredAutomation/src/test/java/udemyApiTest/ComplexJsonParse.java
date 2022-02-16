@@ -54,8 +54,8 @@ public class ComplexJsonParse {
 				break;
 			}
 		}
-		
-		
+
+
 		//total is equal to purchase amount
 		int expectedPurchaseAmount = js.getInt("dashboard.purchaseAmount");
 		int calcPurchaseAmount = 0;
@@ -65,31 +65,66 @@ public class ComplexJsonParse {
 			int copies = js.getInt("courses["+i+"].copies");
 
 			calcPurchaseAmount = calcPurchaseAmount + price*copies;
-			
+
 		}
 		Assert.assertEquals(calcPurchaseAmount,expectedPurchaseAmount );
-		
+
 	}
-	
-	
+
+
 	//Object will stro all type of value.Convert it to string to print it
 	@Test
-	public void dataTypeResponse()
+	public void jsonObjectResponseToMap()
 	{
+		//below url is simple json object
 		RestAssured.baseURI="https://run.mocky.io/v3/adffbe1f-5203-4411-8b3c-83f4d92f8a87";	//https://designer.mocky.io/design/confirmation
 		Response response = given().header("Content-Type","application/json")
-		.when().
-		get("/maps/api/place/nearbysearch/json");
-		
+				.when().
+				get("/maps/api/place/nearbysearch/json");
+
 		response.then().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\mockTest.json")));
-		 
+
 		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
 		System.out.println("hasmap values are :");
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{
 			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
 		}
+
+	}
+
+	@Test
+	public void jsonArrayObjectResponseToMap()
+	{
+		//Below url is combination of json object and json array f object
+		RestAssured.baseURI="https://run.mocky.io/v3/b41e45f5-4a36-4c3e-afea-b6c08aa740f2";	//https://designer.mocky.io/design/confirmation
+		Response response = given().header("Content-Type","application/json")
+				.when().
+				get("/maps/api/place/nearbysearch/json");
+		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
+		System.out.println("hasmap values are :");
+		for(Map.Entry<String,Object> s : responseInMap.entrySet())
+		{
+			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
+			
+		}
 		
 	}
+	
+	/* api response
+	 * {
+		  "name": "divy",
+		  "Address": "123",
+		  "Course": [
+		    {
+		      "title": "abc",
+		      "price": "100"
+		    },
+		    {
+		      "title": "abc",
+		      "price": "200"
+		    }
+		  ]
+		}*/
 
 }
