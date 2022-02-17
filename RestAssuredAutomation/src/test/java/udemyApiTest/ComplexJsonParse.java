@@ -4,7 +4,9 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -96,35 +98,84 @@ public class ComplexJsonParse {
 	@Test
 	public void jsonArrayObjectResponseToMap()
 	{
+		
 		//Below url is combination of json object and json array f object
-		RestAssured.baseURI="https://run.mocky.io/v3/b41e45f5-4a36-4c3e-afea-b6c08aa740f2";	//https://designer.mocky.io/design/confirmation
+		RestAssured.baseURI="https://run.mocky.io/v3/17051430-b230-461f-974c-0a80876478d9";	//https://designer.mocky.io/design/confirmation
 		Response response = given().header("Content-Type","application/json")
 				.when().
 				get("/maps/api/place/nearbysearch/json");
+	//	System.out.println("Response is "+ response.asPrettyString());
+
+		//storing json in hasmap.It contains object and array of objects
 		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
 		System.out.println("hasmap values are :");
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{
-			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
-			
+			System.out.println(s.getKey() +  " " + String.valueOf(s.getValue()));
+			System.out.println(s.getKey() + " "+ s.getValue());
+
 		}
-		
+		System.out.println("name is " +responseInMap.get("name"));
+		System.out.println("address is " +responseInMap.get("Address"));
+
+		Assert.assertEquals(responseInMap.get("name"), "Divy Jain");
+		Assert.assertEquals(responseInMap.get("Address"), 123);
+
+
+		//storing array of object in list of map.
+		List<Map<String,Object>> courseList =(List<Map<String, Object>>) responseInMap.get("Course");
+		for (Map<String, Object> map : courseList) {
+			for(String key : map.keySet())
+			{
+				if(map.get(key).equals("100"))
+				{
+					String expectedTitle = (String) map.get("title");
+					System.out.println("expectedTitle is "+ expectedTitle);
+					Assert.assertEquals(expectedTitle, "Selenium");
+				}
+			}
+		}
+
+		//Storing nested object in map.
+		Map<String,Object> links =(Map<String, Object>) responseInMap.get("links");
+		for (String key : links.keySet()) {
+			if(links.get(key).equals("gmail"))
+			{
+				String gmailValue = (String) links.get(key);
+				System.out.println("gmailValue is"+ gmailValue);
+				Assert.assertEquals(gmailValue, "ddd");	
+			}
+		}
+
+		for(Map.Entry<String, Object> kv :links.entrySet())
+		{
+			if(kv.getKey().equals("linkedin"))
+			{
+				System.out.println("Linkedin value is "+ kv.getValue());
+				Assert.assertTrue(String.valueOf(kv.getValue()).equals("aaa"));
+			}
+
+		}
 	}
-	
+
 	/* api response
 	 * {
-		  "name": "divy",
-		  "Address": "123",
-		  "Course": [
-		    {
-		      "title": "abc",
-		      "price": "100"
-		    },
-		    {
-		      "title": "abc",
-		      "price": "200"
-		    }
-		  ]
-		}*/
-
+    "name": "Divy Jain",
+    "Address": 123,
+    "Course": [
+        {
+            "title": "Selenium",
+            "price": "100"
+        },
+        {
+            "title": "RestAssured",
+            "price": "200"
+        }
+    ],
+    "links": {
+        "linkedin": "aaa",
+        "twitter": "bbb",
+        "gmail": "ddd"
+    }
+}*/
 }
