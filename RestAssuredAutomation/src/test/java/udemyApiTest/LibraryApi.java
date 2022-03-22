@@ -25,11 +25,14 @@ public class LibraryApi {
 		Response res = given().
 		header("Content-Type","application/json").
 		body(payload.addBook(isbn,aisle)).				//no query and path parameter here.
-		when().
-		post("/Library/Addbook.php").
+		when().log().all()
+		.post("/Library/Addbook.php").
 		then().assertThat().statusCode(200).extract().response();
 		String strResponse= res.asString();
 		System.out.println("create lib response is "+ strResponse);
+		JsonPath jp = res.jsonPath();
+		System.out.println("created ID is "+ jp.get("ID"));
+
 		JsonPath j = new JsonPath(strResponse);
 		System.out.println("created ID is "+ j.get("ID"));
 		String Id = j.get("ID");

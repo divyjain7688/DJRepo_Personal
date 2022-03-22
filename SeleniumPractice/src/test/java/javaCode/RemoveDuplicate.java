@@ -74,6 +74,12 @@ public class RemoveDuplicate {
 		}
 	}
 	System.out.println("dup are" + duplicates);	
+	
+	Set<String> uniques = new HashSet<String>(full);
+	System.out.println("uniques are" + uniques);	
+
 	}
+	
+
 
 }

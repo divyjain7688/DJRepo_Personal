@@ -74,16 +74,18 @@ public class ComplexJsonParse {
 	}
 
 
-	//Object will stro all type of value.Convert it to string to print it
+	//Object will store all type of value.Convert it to string to print it
 	@Test
 	public void jsonObjectResponseToMap()
 	{
 		//below url is simple json object
-		RestAssured.baseURI="https://run.mocky.io/v3/adffbe1f-5203-4411-8b3c-83f4d92f8a87";	//https://designer.mocky.io/design/confirmation
-		Response response = given().header("Content-Type","application/json")
+	//	RestAssured.baseURI="https://run.mocky.io/v3/adffbe1f-5203-4411-8b3c-83f4d92f8a87";	//https://designer.mocky.io/design/confirmation
+		Response response = given().baseUri("https://run.mocky.io/v3/adffbe1f-5203-4411-8b3c-83f4d92f8a87")
+				.header("Content-Type","application/json")
 				.when().
 				get("/maps/api/place/nearbysearch/json");
 
+		//generate schema on https://www.liquid-technologies.com/online-json-to-schema-converter
 		response.then().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\mockTest.json")));
 
 		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
@@ -112,12 +114,11 @@ public class ComplexJsonParse {
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{
 			System.out.println(s.getKey() +  " " + String.valueOf(s.getValue()));
+			System.out.println(s.getKey() +  " " +s.getValue());
 			System.out.println(s.getKey() + " "+ s.getValue());
 
 		}
-		System.out.println("name is " +responseInMap.get("name"));
-		System.out.println("address is " +responseInMap.get("Address"));
-
+		//name value is in string format and address value is in int format
 		Assert.assertEquals(responseInMap.get("name"), "Divy Jain");
 		Assert.assertEquals(responseInMap.get("Address"), 123);
 
@@ -129,7 +130,7 @@ public class ComplexJsonParse {
 			{
 				if(map.get(key).equals("100"))
 				{
-					String expectedTitle = (String) map.get("title");
+					String expectedTitle =(String) map.get("title");
 					System.out.println("expectedTitle is "+ expectedTitle);
 					Assert.assertEquals(expectedTitle, "Selenium");
 				}

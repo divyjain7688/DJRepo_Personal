@@ -15,6 +15,8 @@ package javaCode;
 //	      System.out.println("rest of the code...");  
 //	  }  
 		   String s= "Divyjain";
+		   System.out.println("t");
+		   System.out.println(s.concat("test"));
 		  System.out.println(s.split("/")[0]);
 	   } 
 		  public static void main(String arg[])

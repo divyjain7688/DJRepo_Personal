@@ -1,5 +1,6 @@
 package javaCode;
 
+import org.testng.Assert;
 
 public class StringProgram {
 
@@ -7,6 +8,13 @@ public class StringProgram {
 
 	public static void main(String arg[])
 	{
+		String num1 = "2";
+		String num2 = "2";
+		Assert.assertEquals(num1, num2);
+		String str = "This this is is done by Saket Saket";
+		String words[] = str.split("testing");
+		System.out.println(words[0]);
+		
 		String s = "Divy";
 		System.out.println("substring is " +s.substring(1,2));
 		s.concat("jain");
@@ -47,7 +55,7 @@ public class StringProgram {
 		
 		
 		
-		String str = "  India   will      win  the wc 2019 ;";
+		str = "  India   will      win  the wc 2019 ;";
 		System.out.println("str is "+ str);
 		
 		str=str.replace("( )+", " ");

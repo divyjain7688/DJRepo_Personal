@@ -24,7 +24,7 @@ public class CountOfEachWordUsingMap {
 		}
 		System.out.println("map is"+ map);
 
-		for(String s :map.keySet())
+		for(String s : map.keySet())
 		{
 			System.out.println(s +" appears " + map.get(s));
 		}
