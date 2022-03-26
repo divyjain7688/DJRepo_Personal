@@ -40,7 +40,6 @@ public class Comparabletest implements Comparable<Comparabletest>{
 		System.out.println("before sorting");
 		for(Comparabletest a:al)
 		{
-			System.out.println("a is"+ a);
 			System.out.println(a.age+ " "+ a.rollno+" "+ a.name);
 		}
 		Collections.sort(al);
@@ -48,7 +47,6 @@ public class Comparabletest implements Comparable<Comparabletest>{
 		System.out.println("after sorting");
 		for(Comparabletest a:al)
 		{
-			System.out.println("a is"+ a);
 			System.out.println(a.age+ " "+ a.rollno+" "+ a.name);
 		}		
 	}

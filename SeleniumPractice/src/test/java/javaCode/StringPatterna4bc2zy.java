@@ -12,12 +12,12 @@ public class StringPatterna4bc2zy {
 		StringPatterna4bc2zy sm = new StringPatterna4bc2zy();
 		sm.stringUpdate(str);
 	}
-	
+
 	public void stringUpdate(String str)
 	{
 		String s= "";
 		char ch[] = str.toCharArray();
-		for(int i=0;i<=ch.length-1;i++)
+		for(int i=0;i<ch.length;i++)
 		{
 			if(Character.isDigit(ch[i]))
 			{
@@ -28,16 +28,16 @@ public class StringPatterna4bc2zy {
 
 					number--;
 				}
-			s="";
+				s="";
 			}
 			else
 			{
 				s=s+ch[i];
 			}
-				
+
 		}
 		System.out.print(s);
 
-		
+
 	}
 }

@@ -4,7 +4,7 @@ public class StringpatternABbCccDddd {
 	public static void main(String arg[])
 
 	{
-		System.out.println( "final value is "+accum("ZpglnRxqenU"));
+		System.out.println(accum("ZpglnRxqenU"));
 	}
 	public static String accum(String s) 
 	{
@@ -30,6 +30,7 @@ public class StringpatternABbCccDddd {
 			if(i<chars.length-1)
 			sb.append("-");
 		}
+		System.out.println(sb);
 		String pattern =  sb.toString();
 	//	pattern = pattern.substring(0, pattern.length()-1);
 		return pattern;

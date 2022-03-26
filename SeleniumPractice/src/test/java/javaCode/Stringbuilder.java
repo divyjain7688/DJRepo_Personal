@@ -1,7 +1,6 @@
 package javaCode;
-/*package Basics;
 
-public class test {
+public class Stringbuilder {
 
 	public static void main(String arg[])
 	{
@@ -29,6 +28,7 @@ public class test {
 	System.out.println(sb.capacity());
 	}
 }
+/*
 ABCD
 ABCD
 Vk

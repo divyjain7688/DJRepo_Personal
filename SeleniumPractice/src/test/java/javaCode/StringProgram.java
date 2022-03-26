@@ -10,8 +10,9 @@ public class StringProgram {
 	{
 		String num1 = "2";
 		String num2 = "2";
+		
 		Assert.assertEquals(num1, num2);
-		String str = "This this is is done by Saket Saket";
+		String str = "This this is is done by Saket Saket";	
 		String words[] = str.split("testing");
 		System.out.println(words[0]);
 		

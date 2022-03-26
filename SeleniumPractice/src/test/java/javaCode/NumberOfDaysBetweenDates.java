@@ -11,7 +11,7 @@ public class NumberOfDaysBetweenDates {
 
 
 		String dateStart = "21/01/2015 08:29:58";
-		String dateStop = "24/01/2015 11:31:48";
+		String dateStop = "28/01/2015 11:31:48";
 
 		//HH converts hour in 24 hours format (0-23), day calculation
 		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");

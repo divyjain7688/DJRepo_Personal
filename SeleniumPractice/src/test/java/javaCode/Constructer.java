@@ -5,44 +5,6 @@ public class Constructer {
 	 int id;  
 	    String name;  
 	    int age;  
-	Constructer(int id,String name)
-	{
-		this.id=id;
-		this.name=name;
-	}
-	Constructer(int id,String name,int age)
-	{
-		this.id=id;
-		this.name=name;
-		this.age=age;
-	}
-	
-    void display(){System.out.println(id+" "+name+" "+age);}  
-
-    public static void main(String args[])
-    {
-    	Constructer c1 = new Constructer(111,"divy");
-    	Constructer c2 = new Constructer(112,"aaru",26);
-    	
-    	c1.display();
-    	c2.display();
-    }
-
-}
-111 divy 0
-112 aaru 26
-*/
-
-
-
-
-
-/*package Basics;
-
-public class Constructer {
-	 int id;  
-	    String name;  
-	    int age;  
 	Constructer(int id,String name,int age)
 	{
 		this.id=id;

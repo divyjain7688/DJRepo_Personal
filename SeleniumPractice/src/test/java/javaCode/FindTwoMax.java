@@ -3,8 +3,8 @@ package javaCode;
 public class FindTwoMax {
 		public void GetTwoMaxValues(int[] nums) {
 
-			int maxOne = 0;
-			int maxTwo = 0;
+			int maxOne = Integer.MIN_VALUE;
+			int maxTwo = Integer.MIN_VALUE;
 			for (int n : nums) {
 				if (maxOne < n) {
 					maxTwo = maxOne;

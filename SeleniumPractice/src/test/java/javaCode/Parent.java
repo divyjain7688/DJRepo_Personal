@@ -10,14 +10,14 @@ public class Parent {
 	{
 		System.out.println("param parent cons");
 	}
-	
+
 	public void p1()
 	{
-		System.out.println("p1 is called");
+		System.out.println("p1 parent is called");
 	}
 
 	public void p3()
 	{
-		System.out.println("p1 is called");
+		System.out.println("p3 parent is called");
 	}
 }
