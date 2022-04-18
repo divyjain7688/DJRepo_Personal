@@ -31,6 +31,7 @@ public class LibraryApi {
 		String strResponse= res.asString();
 		System.out.println("create lib response is "+ strResponse);
 		JsonPath jp = res.jsonPath();
+	//	JsonPath jsonpath = new JsonPath(strResponse);
 		System.out.println("created ID is "+ jp.get("ID"));
 
 		JsonPath j = new JsonPath(strResponse);

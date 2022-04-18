@@ -41,3 +41,22 @@ public class PostGoogleApiSerialization {
 
 	}
 }
+
+/*
+{
+	"accuracy": 50,
+	"name": "Frontline house",
+	"phone_number": "(02) 9374 4000",
+	"address": "48 Pirrama Road, Pyrmont, NSW 2009, Australia",
+	"website": "http://www.google.com",
+	"language": "en-AU",
+	"location": {
+		"lat": -33.866971,
+		"lng": 151.195875
+	},
+	"types": [
+	          "shoe_store",
+	          "part shoe"
+	          ]
+}
+*/

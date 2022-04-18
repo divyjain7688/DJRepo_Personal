@@ -1,11 +1,14 @@
 package SeleniumFunctionality;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.By;
 
 public class Dropdown {
-	public static void main(String arg[])
+	
+	@Test(groups = {"test1","test2"})
+	public void testCase(String arg[])
 	{
 	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();

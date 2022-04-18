@@ -38,7 +38,6 @@ public class PostGoogleApiSerializationWithSpecBuilders {
 		l.setLat(-33.866971);
 		l.setLng(151.195875);
 		a.setLocation(l);
-		
 		RequestSpecification req =  new RequestSpecBuilder().setBaseUri("http://216.10.245.166").
 		addQueryParam("key","qaclick123").
 		setContentType(ContentType.JSON).build();	

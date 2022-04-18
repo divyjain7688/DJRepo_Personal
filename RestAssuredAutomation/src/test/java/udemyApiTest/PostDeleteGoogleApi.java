@@ -30,15 +30,15 @@ public class PostDeleteGoogleApi {
 	}
 
 	@Test(invocationCount=1,enabled=true)
-	public void postAndDeleteGooglePlace() throws JsonParseException, JsonMappingException, IOException
+	public void postAndDeleteGooglePlace() //throws JsonParseException, JsonMappingException, IOException
 	{
 		RestAssured.baseURI=prop.getProperty("HOST");
 
 		//POST call
-		Response res = given()/*.log().all()*/
+		Response res = given().log().all()
 				.queryParam("key",prop.getProperty("KEY")).header("Content-Type","application/json")
 				.body(payload.addPlacePayload())
-				.when()
+				.when().log().all()
 				.post(resource.placePostResource()).
 				then()/*.log().all()*/.assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
 				body("status",equalTo("OK")).

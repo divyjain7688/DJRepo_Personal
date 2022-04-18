@@ -49,7 +49,7 @@ public class PostGoogleApi {
 	}
 
 	@Test(enabled=true)
-	public void postGooglePlaceFromGetPayloadBoby()
+	public void postGooglePlaceFromGetPayloadBody()
 	{		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
 		Response res = given().log().all().

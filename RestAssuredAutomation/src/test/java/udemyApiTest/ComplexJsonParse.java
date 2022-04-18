@@ -101,7 +101,7 @@ public class ComplexJsonParse {
 	public void jsonArrayObjectResponseToMap()
 	{
 		
-		//Below url is combination of json object and json array f object
+		//Below url is combination of json object and json array of object
 		RestAssured.baseURI="https://run.mocky.io/v3/17051430-b230-461f-974c-0a80876478d9";	//https://designer.mocky.io/design/confirmation
 		Response response = given().header("Content-Type","application/json")
 				.when().
@@ -110,14 +110,14 @@ public class ComplexJsonParse {
 
 		//storing json in hasmap.It contains object and array of objects
 		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
-		System.out.println("hasmap values are :");
+		System.out.println("hasmap values are --------------------"+ responseInMap);
+			
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{
 			System.out.println(s.getKey() +  " " + String.valueOf(s.getValue()));
-			System.out.println(s.getKey() +  " " +s.getValue());
-			System.out.println(s.getKey() + " "+ s.getValue());
-
+			// work same as above once - System.out.println(s.getKey() +  " " +s.getValue());
 		}
+		
 		//name value is in string format and address value is in int format
 		Assert.assertEquals(responseInMap.get("name"), "Divy Jain");
 		Assert.assertEquals(responseInMap.get("Address"), 123);
@@ -125,7 +125,10 @@ public class ComplexJsonParse {
 
 		//storing array of object in list of map.
 		List<Map<String,Object>> courseList =(List<Map<String, Object>>) responseInMap.get("Course");
+		System.out.println("Array of object is " + courseList);
+
 		for (Map<String, Object> map : courseList) {
+			
 			for(String key : map.keySet())
 			{
 				if(map.get(key).equals("100"))
@@ -154,6 +157,8 @@ public class ComplexJsonParse {
 			{
 				System.out.println("Linkedin value is "+ kv.getValue());
 				Assert.assertTrue(String.valueOf(kv.getValue()).equals("aaa"));
+				Assert.assertTrue((kv.getValue()).equals("aaa"));
+
 			}
 
 		}
