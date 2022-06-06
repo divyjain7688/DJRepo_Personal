@@ -8,6 +8,8 @@ public class RemoveMultipleSpaces {
 		System.out.println("s before updates is  -->" + s);
 		s=s.replaceAll("() +", " ");
 		System.out.println("s after updates is  -->" + s);
+		s=s.replaceAll("()+", " ");
+		System.out.println("s after updates is  -->" + s);
 
 
 		String s1 = "   india    has good chance      fo    winning wc";

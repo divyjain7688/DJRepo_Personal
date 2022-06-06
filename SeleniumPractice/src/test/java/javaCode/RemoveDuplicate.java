@@ -23,7 +23,6 @@ public class RemoveDuplicate {
 	//remove dup from string
 	public String removeDup(String str) {
 		String strNoDup = "";
-
 		// loop over string and get each char
 		for(char ch : str.toCharArray()) {
 			// if strNoDup does not contain char then add to it
@@ -35,7 +34,7 @@ public class RemoveDuplicate {
 	} 
 	
 	//remove dup int from int array
-	public void removeDupInt(int[]  a)
+	public void removeDupInt(int a[])
 	{
 		Arrays.sort(a);
 		List<Integer> noDup = new ArrayList<Integer>();
@@ -63,8 +62,9 @@ public class RemoveDuplicate {
 	full.add("testLnt");
 	full.add("test");
 
+//	Set<String> duplicates = new HashSet<String>(full);
+//System.out.println("duplicates=== " + duplicates);
 	Set<String> duplicates = new HashSet<String>();
-
 	Set<String> temp = new HashSet<String>();
 	for(String f : full)
 	{

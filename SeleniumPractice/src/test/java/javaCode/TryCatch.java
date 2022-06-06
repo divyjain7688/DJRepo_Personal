@@ -20,7 +20,7 @@ public class TryCatch {
 		
 			Boolean flag = tryCatch();
 			System.out.println("flag is "+ flag);
-			validateAge(20);
+			validateAge(10);
 		
 //				finally {
 //					System.out.println("finally");

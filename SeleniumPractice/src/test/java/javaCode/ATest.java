@@ -18,8 +18,18 @@ public class ATest{
 	} 
 	public static void main(String arg[])
 	{
+		int m =90;
+	
+		System.out.println("String value is - "+ Integer.toString(m));
+		String s =Integer.toString(m);
+		int[] arr = new int[s.length()]; 
 
-		String s= "Divyjain";
+		for(int i=0; i<s.length(); i++){
+			arr[i] = s.charAt(i);//Character.getNumericValue(s.charAt(i));
+			System.out.println(arr[i]);
+		}
+		 s = "testing";
+		s = "Divyjain";
 		System.out.println(s.concat("test"));
 		System.out.println(s.split("/")[0]);
 
@@ -28,7 +38,6 @@ public class ATest{
 		char ch = 'a';
 		String.valueOf(ch);
 		System.out.println(ch+" "+ String.valueOf(ch));
-
 
 		int num = 1234; 
 

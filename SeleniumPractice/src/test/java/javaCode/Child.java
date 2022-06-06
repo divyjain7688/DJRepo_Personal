@@ -1,20 +1,21 @@
 package javaCode;
 
 public class Child extends Parent{
-	//super("dj");
 	int c=10;
-//	Child(String c)
-//	{
-//		System.out.println("child param cons");
-//	}
 	Child()
 	{
 		System.out.println("default child cons");
 	}
+	Child(String c)
+	{
+		super(c);
+		System.out.println("child param cons "+ c);
+	}
+	
 	
 	public static void main(String arg[])
 	{
-		Parent p = new Child();
+		Parent p = new Child("a");
 		p.p1();
 		p.p3();
 	//	p.p2(); violation of method overriding
@@ -28,7 +29,7 @@ public class Child extends Parent{
 	
 	public void p1()
 	{
-		System.out.println("p1 child is called");
+		System.out.println("p1 child is called " + c);
 	}
 	
 	public void p2()

@@ -15,6 +15,32 @@ public class ObjectMethod {
 		return name +" "+ age;
 	}
 	
+	 @Override public boolean equals(Object obj)
+	    {
+	 
+	        
+	        if (this == obj)
+	            return true;
+	 
+	        // checking for two condition:
+	        // 1) object is pointing to null
+	        // 2) if the objects belong to
+	        // same class or not
+	        if (obj == null
+	            || this.getClass() != obj.getClass())
+	            return false;
+	 
+	  
+	 
+	        // checking if the two
+	        // objects share all the same values
+	        ObjectMethod o = (ObjectMethod)obj;
+	        return this.name.equals(o.name)
+	            && this.age == o.age;
+	    }
+	
+
+
 
 	public static void main(String arg[])
 	{
@@ -24,5 +50,6 @@ public class ObjectMethod {
 		System.out.println(O2);
 		System.out.println(O1);
 
+		System.out.println(O2.equals(O1));
 	}
 }

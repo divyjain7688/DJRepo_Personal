@@ -24,7 +24,6 @@ public class Comparabletest implements Comparable<Comparabletest>{
 			return 1;  
 		else  
 			return -1;  
-
 	}
 
 	public static void main(String arg[])
@@ -48,7 +47,10 @@ public class Comparabletest implements Comparable<Comparabletest>{
 		for(Comparabletest a:al)
 		{
 			System.out.println(a.age+ " "+ a.rollno+" "+ a.name);
-		}		
+		}	
+		
+		System.out.println("c2 isss" + c2);
+
 	}
 
 	public String toString(){//overriding the toString() method  

@@ -1,6 +1,8 @@
 package javaCode;
 
 abstract class ParentClass {
+	// can not create object of abstract class - ParentClass p new ParentClass();
+	
 	public void run() {
 		System.out.println("ParentClass is running");
 	}

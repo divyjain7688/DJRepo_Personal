@@ -1,11 +1,13 @@
 package javaCode;
-/*package Basics;
 
 public class Final {
 	final int a=10;
 	public void add()
 	{
-		a=a+1;
+		//a=a+1;
+		System.out.println("add method");
+
+		
 	}
 	public static void main(String arg[])
 	{
@@ -13,19 +15,30 @@ public class Final {
 		f.add();
 	}
 
-}
+}/*
 Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
 	The final field Final.a cannot be assigned
 
 	at Basics.Final.add(Final.java:7)
-	at Basics.Final.main(Final.java:12)*/
+	at Basics.Final.main(Final.java:12)
 
 
 
 
 
 
+public class Final {
+	final int a=10;
+	public static void add()
+	{
+		System.out.println("final method");
+	}
+	public static void main(String arg[])
+	{
+		add();
+	}
 
+}
 
 
 //class parent{

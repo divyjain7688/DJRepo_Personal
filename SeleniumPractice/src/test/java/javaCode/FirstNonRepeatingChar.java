@@ -2,7 +2,7 @@ package javaCode;
 import java.util.HashMap;
 import java.util.Map;
 
-class FirstNonRepeatingFirstChar {
+class FirstNonRepeatingChar {
 	public static String firstNonRepeatingLetter(String str) {
 
 		char [] arr =str.toCharArray();

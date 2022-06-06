@@ -3,7 +3,7 @@ package javaCode;
 public class ReverseStringAndNumber {
 	public static void main(String arg[])
 	{
-		String s = "automation testing";
+		String s = "abc";
 		String rev="";
 		for(int i=s.length()-1;i>=0;i--)
 		{
@@ -12,7 +12,7 @@ public class ReverseStringAndNumber {
 		System.out.println("reverse string is    "+ rev);
 		
 		
-		
+		s.toCharArray();
 		int number = 5463;
 		System.out.println(number);
 		int invert=0;

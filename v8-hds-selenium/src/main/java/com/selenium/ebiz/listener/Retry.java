@@ -36,7 +36,7 @@ public class Retry extends BaseClassV8_Parallel implements IRetryAnalyzer {
 
 	public void extendReportsFailOperations(ITestResult iTestResult) throws Exception {
 	Object testClass = iTestResult.getInstance();
-	WebDriver webDriver = this.driver;
+	WebDriver webDriver = this.getDriver();
 		//	((BaseClassV8_Parallel) testClass).getDriver();
 		//WaitTool.hardWait();
 		String base64Screenshot = "data:image/png;base64,"

@@ -4,7 +4,7 @@ public class StringpatternABbCccDddd {
 	public static void main(String arg[])
 
 	{
-		System.out.println(accum("ZpglnRxqenU"));
+		System.out.println(accum("ZpglU"));
 	}
 	public static String accum(String s) 
 	{

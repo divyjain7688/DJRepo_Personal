@@ -36,6 +36,8 @@ public class Interfaceprogram implements one,two{
 		one o = new Interfaceprogram();
 		two t = new Interfaceprogram();
 		t.b();
+		//t.a();
+		t.c();
 		Interfaceprogram i = new Interfaceprogram();
 		i.c();
 	}

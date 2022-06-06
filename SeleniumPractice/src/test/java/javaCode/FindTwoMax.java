@@ -1,7 +1,7 @@
 package javaCode;
 
 public class FindTwoMax {
-		public void GetTwoMaxValues(int[] nums) {
+		public void GetTwoMaxValues(int nums[]) {
 
 			int maxOne = Integer.MIN_VALUE;
 			int maxTwo = Integer.MIN_VALUE;

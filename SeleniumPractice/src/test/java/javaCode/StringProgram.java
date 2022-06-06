@@ -27,8 +27,10 @@ public class StringProgram {
 
 		String s3 = new String("DJ");
 		String s4 = new String("DJ");
+		String s9 = "DJ";
 		System.out.println(s3.equals(s4));
 		System.out.println(s3==s4);
+		System.out.println(s3==s9);
 
 
 		String s5="India";
@@ -59,7 +61,7 @@ public class StringProgram {
 		str = "  India   will      win  the wc 2019 ;";
 		System.out.println("str is "+ str);
 		
-		str=str.replace("( )+", " ");
+		str=str.replace("() +", " ");
 		System.out.println("str is "+ str);
 		System.out.println("float  "+ .1+.2+.3);
 		System.out.println("float  "+ .1+.2+.3+3);
@@ -68,7 +70,7 @@ public class StringProgram {
 
 
 		String ss = "#t%6Y";
-		ss = ss.replaceAll("[^a-zA-Z]", "");
+		ss = ss.replaceAll("[a-zA-Z0-9]", "");
 		System.out.println("ss is "+ ss);
 	}
 
