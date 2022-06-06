@@ -14,6 +14,7 @@ public class Iframe {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/guru99home/");
 		driver.manage().window().maximize();
+		//getCssValue("color");
 		 List<WebElement> frames = driver.findElements(By.tagName("iframe"));	
 		 int framesize = driver.findElements(By.tagName("iframe")).size();
 		 System.out.println("Number of frames in a page :" + framesize);

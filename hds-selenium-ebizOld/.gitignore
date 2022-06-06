@@ -1,22 +1,2 @@
-v8_hds_selenium/.project
-v8_hds_selenium/.classpath
-v8_hds_selenium/.metadata
-v8_hds_selenium/.settings
-v8_hds_selenium/target
-v8_hds_selenium/test-output
-v8_hds_selenium/TestLogs
-v8-hds-selenium/.project
-v8-hds-selenium/.classpath
-v8-hds-selenium/.metadata
-v8-hds-selenium/.settings
-v8-hds-selenium/target
-v8-hds-selenium/test-output
-v8-hds-selenium/TestLogs
-<<<<<<< Updated upstream
-.metadata/
-.recommenders/
-=======
-*.exe
->>>>>>> Stashed changes
-v8-hds-selenium/debug.log
-/target/
+target/
+test-output/
