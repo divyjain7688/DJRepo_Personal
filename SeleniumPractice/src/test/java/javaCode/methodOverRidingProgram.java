@@ -1,4 +1,4 @@
-class parent{
+/*class parent{
 	
 	public void display()
 	{
@@ -8,12 +8,14 @@ class parent{
 }
 
 class child extends parent {
-/*	public void display()
+	public void display()
 	{
 		System.out.println("child");
-	}*/
+	}
 	
 }
+
+
 public class methodOverRidingProgram {
 	public static void main(String[] arg)
 	{
@@ -27,7 +29,7 @@ public class methodOverRidingProgram {
 
 
 
-
+*/
 
 /*package javalearning;
 

@@ -8,7 +8,7 @@ public class Parent {
 	}
 	Parent(String s)
 	{
-		System.out.println("param parent cons");
+		System.out.println("param parent cons " + s);
 	}
 
 	public void p1()
