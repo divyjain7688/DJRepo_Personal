@@ -1,7 +1,6 @@
 package javaCode;
 
 interface one{
-	
 	void a();
 	void b();
 }

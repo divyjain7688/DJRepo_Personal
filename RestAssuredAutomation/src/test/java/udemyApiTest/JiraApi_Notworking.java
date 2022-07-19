@@ -37,7 +37,7 @@ public class JiraApi_Notworking {
 		Response createIssueResponse = given().header("Content-Type","application/json").
 				header("Cookie","JSESSIONID="+sessionKey+"").
 				body(payload.createIssue(ReusableMethods.randomNumber())).
-				when().post("/rest/api/2/issue").then().
+				when().post("/rest/api/2/issue").then().assertThat().
 				statusCode(201).extract().response();	
 		JsonPath j = ReusableMethods.rawToJson(createIssueResponse);
 		String id = j.get("id");

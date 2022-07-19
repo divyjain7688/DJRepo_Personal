@@ -30,7 +30,8 @@ public class Iframe {
 		driver.switchTo().frame(j);
    		int total = driver.findElements(By.xpath("html/body/a/img")).size();
    		System.out.println("total is "+total);
-   		driver.switchTo().defaultContent();		
+   		driver.switchTo().defaultContent();		//to come at the top frame
+   		driver.switchTo().parentFrame();		// to move to immediate parent frame
 	}
 		driver.close();
 	}

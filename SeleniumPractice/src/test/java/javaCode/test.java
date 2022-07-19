@@ -4,6 +4,12 @@ public class test {
 	
 	public static void main(String arg[])
 	{
+		
+		String s ="aUtomation";
+		String l ="teStinG";
+		StringBuilder sb = new StringBuilder();
+		sb.append(Character.toUpperCase(s.charAt(0))).append(s.charAt(1)).append(Character.toUpperCase(l.charAt(0))).append(l.charAt(1));
+		System.out.println("final result is "+ sb.toString());
 		String vowel = "aeiou";
 		String str = "divyjain";
 		char alphabets[]=str.toCharArray();

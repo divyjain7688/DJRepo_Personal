@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -11,6 +12,7 @@ import java.util.Map.Entry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import groovyjarjarasm.asm.TypeReference;
 import io.restassured.RestAssured;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.path.json.JsonPath;
@@ -20,6 +22,16 @@ import udemyApiResource.payload;
 
 public class ComplexJsonParse {
 
+	
+	@Test
+	public void testNestedResponse()
+	{
+		String response = payload.nestedReponse();
+		JsonPath js = new JsonPath(response);
+		System.out.println("value is "+ js.get("problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].strength").toString());
+	}
+	
+	
 	@Test()
 	public void testComplexJson()
 	{
@@ -99,8 +111,7 @@ public class ComplexJsonParse {
 
 	@Test
 	public void jsonArrayObjectResponseToMap()
-	{
-		
+	{		
 		//Below url is combination of json object and json array of object
 		RestAssured.baseURI="https://run.mocky.io/v3/17051430-b230-461f-974c-0a80876478d9";	//https://designer.mocky.io/design/confirmation
 		Response response = given().header("Content-Type","application/json")

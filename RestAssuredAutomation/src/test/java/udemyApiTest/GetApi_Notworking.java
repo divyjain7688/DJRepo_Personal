@@ -22,7 +22,7 @@ public class GetApi_Notworking {
 		when().
 		get("/maps/api/place/nearbysearch/json").
 		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
-		body("results[0].name", equalTo("Sydney")).and().header("Server", "scaffolding on HTTPServer2").and().
+		body("results[0].name", equalTo("Sydney")).and().header("Server", equalTo("scaffolding on HTTPServer2")).and().
 		header("Content-Type", "application/json; charset=UTF-8").and().extract().response();
 		String response = res.asString();
 		System.out.println("String format response is "+ response);

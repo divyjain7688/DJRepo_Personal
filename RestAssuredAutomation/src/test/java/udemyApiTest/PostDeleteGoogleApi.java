@@ -81,7 +81,7 @@ public class PostDeleteGoogleApi {
 		{
 			System.out.println(s.getKey() + " "+ String.valueOf(s.getValue()));
 		//same result as above line ---	System.out.println(s.getKey() + " "+ s.getValue());
-
+			
 		}
 		Assert.assertEquals((String)responseInMap.get("name"),"Google Shoes!");
 		//same result as above line ---		Assert.assertEquals(responseInMap.get("name"),"Google Shoes!");
