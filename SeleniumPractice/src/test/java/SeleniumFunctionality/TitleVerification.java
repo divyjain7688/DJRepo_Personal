@@ -8,7 +8,6 @@ public class TitleVerification {
 	{
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-
         String baseUrl = "http://demo.guru99.com/test/newtours/";
         String expectedTitle = "Welcome:";
         String actualTitle = "";
