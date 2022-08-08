@@ -1,4 +1,4 @@
-package javaCode;
+/*package javaCode;
 
 public class Child extends Parent{
 	int c=10;
@@ -13,6 +13,17 @@ public class Child extends Parent{
 	}
 	
 	
+	public void p1()
+	{
+		System.out.println("p1 child is called " + c);
+	}
+	
+	public void p2()
+	{
+		System.out.println("p2 child is called");
+	}
+
+	
 	public static void main(String arg[])
 	{
 		Parent p = new Child("a");
@@ -26,15 +37,6 @@ public class Child extends Parent{
 		 c.p3();
 		 c.p1();
 	}
-	
-	public void p1()
-	{
-		System.out.println("p1 child is called " + c);
-	}
-	
-	public void p2()
-	{
-		System.out.println("p2 child is called");
-	}
 
 }
+*/

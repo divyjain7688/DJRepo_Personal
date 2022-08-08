@@ -1,5 +1,6 @@
-package javaCode;
+/*package javaCode;
 
+package javaCode;
 public class Parent {
 	int c=12;
 	Parent()
@@ -21,3 +22,4 @@ public class Parent {
 		System.out.println("p3 parent is called");
 	}
 }
+*/

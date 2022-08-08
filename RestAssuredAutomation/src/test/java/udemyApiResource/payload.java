@@ -221,4 +221,84 @@ public class payload {
 				+ "  ]\r\n"
 				+ "}";
 	}
+	
+	
+	public static String sapientTestJson()
+	{
+		
+		return "{\r\n"
+				+ "	\"members\": \r\n"
+				+ "	[\r\n"
+				+ "		{\r\n"
+				+ "			\"memberName\": \"Amit\",\r\n"
+				+ "			\"memberId\": 101,\r\n"
+				+ "			\"memberAddress\": \r\n"
+				+ "			{\r\n"
+				+ "				\"PinCode\": 410057,\r\n"
+				+ "				\"State\": \"Gurugram\"\r\n"
+				+ "			}\r\n"
+				+ "		},\r\n"
+				+ "		{\r\n"
+				+ "			\"memberName\": \"Sameer\",\r\n"
+				+ "			\"memberId\": 102,\r\n"
+				+ "			\"memberAddress\": \r\n"
+				+ "			{\r\n"
+				+ "				\"PinCode\": 410057,\r\n"
+				+ "				\"State\": \"Gurugram\"\r\n"
+				+ "			}\r\n"
+				+ "		},\r\n"
+				+ "		{\r\n"
+				+ "			\"memberName\": \"Jassi\",\r\n"
+				+ "			\"memberId\": 104,\r\n"
+				+ "			\"memberAddress\": \r\n"
+				+ "			{\r\n"
+				+ "				\"PinCode\": 454332,\r\n"
+				+ "				\"State\": \"Delhi\"\r\n"
+				+ "			}\r\n"
+				+ "		}		\r\n"
+				+ "	]\r\n"
+				+ "}";
+	}
+	
+	
+	public static String findAllJson()
+	{
+		return "[\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 9741962,\r\n"
+				+ "    \"name\": \"getName\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "},\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 432434,\r\n"
+				+ "    \"name\": \"getName\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "},\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 1,\r\n"
+				+ "    \"name\": \"New\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "}\r\n"
+				+ "]";  
+		/*	return "{\r\n"
+				+ "	\"members\": \r\n"
+				+ "	[\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 9741962,\r\n"
+				+ "    \"name\": \"getName\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "},\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 432434,\r\n"
+				+ "    \"name\": \"getName\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "},\r\n"
+				+ "{\r\n"
+				+ "    \"id\": 1,\r\n"
+				+ "    \"name\": \"New\",\r\n"
+				+ "    \"isActive\": true\r\n"
+				+ "}\r\n"
+				+ "]\r\n"
+				+ "}"; */
+	}
 }

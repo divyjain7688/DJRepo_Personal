@@ -135,7 +135,7 @@ public class ComplexJsonParse {
 
 
 		//storing array of object in list of map.
-		List<Map<String,Object>> courseList =(List<Map<String, Object>>) responseInMap.get("Course");
+		List<Map<String,Object>> courseList = (List<Map<String, Object>>) responseInMap.get("Course");
 		System.out.println("Array of object is " + courseList);
 
 		for (Map<String, Object> map : courseList) {
