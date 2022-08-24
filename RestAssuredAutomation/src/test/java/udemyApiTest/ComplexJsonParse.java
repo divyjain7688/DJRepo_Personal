@@ -19,6 +19,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import udemyApiResource.ReusableMethods;
 import udemyApiResource.payload;
+import static org.hamcrest.Matchers.*;
 
 public class ComplexJsonParse {
 
@@ -116,7 +117,11 @@ public class ComplexJsonParse {
 		RestAssured.baseURI="https://run.mocky.io/v3/17051430-b230-461f-974c-0a80876478d9";	//https://designer.mocky.io/design/confirmation
 		Response response = given().header("Content-Type","application/json")
 				.when().
-				get("/maps/api/place/nearbysearch/json");
+				get("/maps/api/place/nearbysearch/json")
+				.then().
+				body("Course.find{it.title=='Selenium'}.price",equalTo("100")).
+				body("Course.findAll{it.title=='Selenium'}.price",hasItems("100")).extract().response();
+
 	//	System.out.println("Response is "+ response.asPrettyString());
 
 		//storing json in hasmap.It contains object and array of objects

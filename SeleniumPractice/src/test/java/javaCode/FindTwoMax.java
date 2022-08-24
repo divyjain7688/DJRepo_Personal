@@ -21,9 +21,9 @@ public class FindTwoMax {
 
 		public static void main(String[] args) {
 
-			int list[] = { 15, 24, 48, 21, 43, 11, 79, 93 };
+			int numbers[] = { 15, 24, 48, 21, 43, 11, 79, 93 };
 
 			FindTwoMax max = new FindTwoMax();
-			max.GetTwoMaxValues(list);
+			max.GetTwoMaxValues(numbers);
 		}
 	}

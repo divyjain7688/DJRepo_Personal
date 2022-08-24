@@ -1,4 +1,5 @@
 package udemyApiTest;
+import org.hamcrest.collection.HasItemInArray;
 import org.testng.annotations.Test;
 import io.restassured.path.json.JsonPath;
 import udemyApiResource.payload;
@@ -26,8 +27,14 @@ public class SapientJsonTest {
 	//	System.out.println(js.param("city", "Gurugram").get("findAll {it.members.memberAddress.State == city}"));
 
 		
+	//	System.out.println("size of members arrays is "+js.getList( "members.findAll{it.length()}" ));
 		System.out.println("memberid of Gurugram user is "+js.getList( "members.findAll{it.memberAddress.State == 'Gurugram' }.memberAddress.PinCode" ));
 		System.out.println("memberid of Gurugram user is "+js.getList( "members.findAll{it.memberAddress.State == 'Gurugram' }.memberName" ));
+		String city = "Gurugram";
+		System.out.println("memberid of parameterized Gurugram user is "+js.getList( "members.findAll{it.memberAddress.State == '"+city+"' }.memberAddress.PinCode" ));
+		js.getList( "members.findAll{it.memberAddress.State == '"+city+"' }.memberAddress.PinCode" );
+		
+
 
 	}
 

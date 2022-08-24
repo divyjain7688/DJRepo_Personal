@@ -2,7 +2,7 @@ package javaCode;
 
 import java.util.Random;
 
-public class test {
+public class Vowel {
 	
 	public static void main(String arg[])
 	{
