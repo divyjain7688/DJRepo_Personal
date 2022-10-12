@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="1" name="Test_Pass">
+		<parameter name="param" value="PASS" />
+		<classes>
+			<class name="udemyApiTest.PojoDesrialization" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Test_Fail">
+		<parameter name="param" value="FAIL" />
+		<classes>
+			<class name="udemyApiTest.PojoDesrialization" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
