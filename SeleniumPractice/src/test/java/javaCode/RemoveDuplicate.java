@@ -3,6 +3,7 @@ package javaCode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -34,21 +35,13 @@ public class RemoveDuplicate {
 	} 
 	
 	//remove dup int from int array
-	public void removeDupInt(int a[])
-	{
-		Arrays.sort(a);
-		List<Integer> noDup = new ArrayList<Integer>();
-		System.out.println(a);
-		for(int j=0;j<a.length-1;j++)
-		{
-			if(a[j]!=a[j+1])
-			{
-				noDup.add(a[j]);
-			}
-		}
-		System.out.println("noDup are "+ noDup.toString() );
-		
-	} 
+	public void removeDupInt(int[] a) {
+	    Set<Integer> noDup = new LinkedHashSet<Integer>();
+	    for (int num : a) {
+	        noDup.add(num); // Set automatically handles duplicates
+	    }
+	    System.out.println("noDup are " + noDup);
+	}
 	
 
 	

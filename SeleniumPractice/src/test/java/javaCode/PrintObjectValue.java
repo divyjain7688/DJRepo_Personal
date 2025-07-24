@@ -10,12 +10,13 @@ public class PrintObjectValue {
 	{
 		PrintObjectValue p = new PrintObjectValue();
 		p.setValue("test");
-		System.out.println(p.toString());
+		System.out.println(p);
+		System.out.println("after to string called");
 	}
 	
 	public String toString()
 	{
-		return "testing";
+        return "This is a PrintObjectValue object";
 	}
 
 }

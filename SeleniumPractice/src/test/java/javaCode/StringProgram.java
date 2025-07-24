@@ -28,8 +28,8 @@ public class StringProgram {
 		String s3 = new String("DJ");
 		String s4 = new String("DJ");
 		String s9 = "DJ";
-		System.out.println(s3.equals(s4));
-		System.out.println(s3==s4);
+		System.out.println(s3.equals(s4)); //equal compare just values
+		System.out.println(s3==s4); //== compare references
 		System.out.println(s3==s9);
 
 
@@ -61,7 +61,7 @@ public class StringProgram {
 		str = "  India   will      win  the wc 2019 ;";
 		System.out.println("str is "+ str);
 		
-		str=str.replace("() +", " ");
+		str=str.replace("\\s+", " ");
 		System.out.println("str is "+ str);
 		System.out.println("float  "+ .1+.2+.3);
 		System.out.println("float  "+ .1+.2+.3+3);

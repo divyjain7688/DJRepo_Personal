@@ -26,7 +26,7 @@ public class ATest{
 
 		for(int i=0; i<s.length(); i++){
 			arr[i] = s.charAt(i);//Character.getNumericValue(s.charAt(i));
-			System.out.println(arr[i]);
+			System.out.println("array length " + arr[i]);
 		}
 		 s = "testing";
 		s = "Divyjain";

@@ -20,7 +20,7 @@ public class PostGoogleApi {
 		Response res = given().log().all().
 				queryParam("key","qaclick123").header("Content-Type","application/json").
 				body("{"+
-						"\"location\": {"+								//freeformatter .com to 
+						"\"location\": {"+								//freeformatter .com escape json
 						"\"lat\": -33.8669710,"+
 						"\"lng\": 151.1958750"+
 						"},"+

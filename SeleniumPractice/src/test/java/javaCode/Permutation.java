@@ -16,7 +16,7 @@ public class Permutation {
 		}
 		
 		
-		String str = "ab";
+		String str = "asfb";
 		permutation(str, "");
 
 	}

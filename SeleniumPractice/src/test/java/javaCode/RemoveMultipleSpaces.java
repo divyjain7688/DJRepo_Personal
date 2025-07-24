@@ -9,7 +9,7 @@ public class RemoveMultipleSpaces {
 		s=s.replaceAll("() +", " ");
 		System.out.println("s after updates is  -->" + s);
 		s=s.replaceAll("()+", " ");
-		System.out.println("s after updates is  -->" + s);
+		System.out.println("s after second updates is  -->" + s);
 
 
 		String s1 = "   india    has good chance      fo    winning wc";
@@ -21,24 +21,17 @@ public class RemoveMultipleSpaces {
 
 
 		//remove spaces without replace using SB
-		String str1 = "Saket Saurav        is an Autom ation Engi ne      er";
-		char[] chars = str1.toCharArray();
-		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < chars.length; i++)
-		{
+		 String str1 = "Saket Saurav        is an Autom ation Engi ne      er";
+	        String[] words = str1.split(" "); // splits on space (can be multiple spaces)
+	        StringBuilder sb = new StringBuilder();
+	        for (String word : words) {
+		        System.out.println("word is "+ word);
+	            if (!word.isEmpty()) { // skip extra spaces
+	                sb.append(word).append(" ");
+	            }
+	        }
 
-			if( (chars[i] != ' ') && (chars[i] != '\t') )
-
-			{
-
-				sb.append(chars[i]);
-
-			}
-
-		}
-
-		System.out.println(sb);
-		System.out.println(sb.toString());
+	        System.out.println("Normalized: " + sb.toString().trim());
 	}
 }
 

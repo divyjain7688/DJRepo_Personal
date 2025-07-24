@@ -12,6 +12,8 @@ import java.util.Map.Entry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import groovyjarjarasm.asm.TypeReference;
 import io.restassured.RestAssured;
 import io.restassured.common.mapper.TypeRef;
@@ -31,6 +33,7 @@ public class ComplexJsonParse {
 		JsonPath js = new JsonPath(response);
 		System.out.println("value is "+ js.get("problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].strength").toString());
 	}
+	
 	
 	
 	@Test()
@@ -101,7 +104,7 @@ public class ComplexJsonParse {
 		//generate schema on https://www.liquid-technologies.com/online-json-to-schema-converter
 		response.then().body(matchesJsonSchema(new File(System.getProperty("user.dir")+"\\src\\test\\resource\\schemas\\mockTest.json")));
 
-		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});
+		Map<String,Object> responseInMap  = response.as(new TypeRef<Map<String,Object>>(){});			    
 		System.out.println("hasmap values are :");
 		for(Map.Entry<String,Object> s : responseInMap.entrySet())
 		{

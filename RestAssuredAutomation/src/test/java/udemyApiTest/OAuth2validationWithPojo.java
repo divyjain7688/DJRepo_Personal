@@ -81,3 +81,48 @@ public class OAuth2validationWithPojo {
 		Assert.assertTrue(actualCourses.equals(expectedCourses));
 	}
 }
+
+
+
+/*
+{
+"instructor": "Rahul Shetty",
+"url": "rahulshettycademy.com",
+"services": "projectSupport",
+"expertise": "Automation",
+"linkedIn": "https://www.linkedin.com/in/rahul-shetty/",
+"courses": {
+  "webAutomation": [
+    {
+      "courseTitle": "Selenium Webdriver Java",
+      "price": 50
+    },
+    {
+      "courseTitle": "Cypress",
+      "price": 40
+    },
+    {
+      "courseTitle": "Protractor",
+      "price": 30
+    }
+  ],
+  "api": [
+    {
+      "courseTitle": "Rest Assured Automation using Java",
+      "price": 60
+    },
+    {
+      "courseTitle": "SoapUI Webservices testing",
+      "price": 45
+    }
+  ],
+  "mobile": [
+    {
+      "courseTitle": "Appium-Mobile Automation using Java",
+      "price": 70
+    }
+  ]
+}
+}
+
+*/

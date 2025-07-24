@@ -172,7 +172,7 @@ public class JiraApi_Notworking {
 
 		//add attchment in issue
 		given().log().all().filter(session).
-		header("Content-Type","multipart/form-data").header("X-Atlassian-Token","no-check").
+		header("Content-Type","multipart/form-data").header("X-Atlassian-Token","no-check"). //this is  CSRF token for actions like uploading attachments.
 		multiPart("file",new File("jira.txt"))
 		.pathParam("issueIdOrKey", id)
 		.when().post("/rest/api/2/issue/{issueIdOrKey}/attachments")

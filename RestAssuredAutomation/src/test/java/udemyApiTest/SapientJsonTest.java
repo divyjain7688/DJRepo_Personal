@@ -77,23 +77,26 @@ public class SapientJsonTest {
 
 
 @Test
-public void testFindAll()
+public void testFindAllWithDynamicParams()
 {
 
 	String response = payload.findAllJson();
-	//System.out.println("response is "+ response);
+	System.out.println("response is "+ response);
 	JsonPath js = new JsonPath(response);
 	
-	System.out.println(js.getList("members.findAll { it.name == 'getName'  }.id"));
+	System.out.println(js.getList("findAll{it.name=='getName'}.id"));
 
 	
-	System.out.println(js.param("name", "getName").getList("findAll { a -> a.name == name  }"));
-	System.out.println(js.param("name", "getName").get("findAll { a -> a.name == name  }"));
-	System.out.println(js.param("name", "getName").getList("findAll { it.name == name  }"));
-	System.out.println(js.param("test", "getName").get("findAll { it.name == test  }"));
-	System.out.println(js.get("findAll { it.name == 'getName'  }"));
-	System.out.println(js.get("findAll { it.name == 'getName'  }.id"));
-	System.out.println(js.getList("findAll { it.name == 'getName'  }.id"));
+	
+	System.out.println(js.param("name", "divy").getList("findAll { it.name == name  }"));  //dynamic way
+	System.out.println(js.getList("findAll{it.name=='divy'}"));  // hardcoded way og above line
+	System.out.println(js.param("name", "divy").param("status", true).getList("findAll { it.name == name && it.isActive == status }")); //multiple dynamic parameter
+
+	System.out.println("memberid of Gurugram user is "+js.getList( "members.findAll{it.memberAddress.State == 'Gurugram' }.memberName" ));
+	System.out.println(js.param("test", "divy").get("findAll { it.name == test  }"));
+	System.out.println(js.get("findAll { it.name == 'divy'  }"));
+	System.out.println(js.get("findAll { it.name == 'divy'  }.id"));
+	System.out.println(js.getList("findAll { it.name == 'divy'  }.id"));
 
 
 }

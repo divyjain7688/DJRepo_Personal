@@ -9,6 +9,7 @@ public class Practice {
 	}
 	static void change()
 	{
+		System.out.println("Change fn called");
 		s=s+1;
 		System.out.println("value of s is "+ s);
 
@@ -23,9 +24,9 @@ public class Practice {
 		byte c=(byte) (a+b);
 		System.out.println("value of c is "+c);
 		int x= 10;
-		System.out.println(x--);
-		System.out.println(--x);
-		System.out.println(x--);
+		System.out.println(x--); //10
+		System.out.println(--x); //8
+		System.out.println(x--); //8
 		System.out.println(x);  //7
 
 		System.out.println(x++ + x++);  //7+8
